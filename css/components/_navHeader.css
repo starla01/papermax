@@ -1,0 +1,105 @@
+#navBarHeader {
+  left: 0;
+  top: 40px;
+  z-index: 2;
+  width: 720px;
+  height: 320px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: none;
+}
+
+#navBarHeader #deptos {
+  width: 120px;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 20px 0 0 20px;
+  padding: 17px 0;
+  box-sizing: border-box;
+}
+
+#navBarHeader #deptos .depto {
+  padding: 10px 10px;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#navBarHeader #deptos .depto:hover {
+  background-color: #2f80ed;
+  color: white;
+}
+
+#navBarHeader #deptos .depto:hover > .family {
+  display: block;
+}
+
+#navBarHeader #deptos .depto .family {
+  position: absolute;
+  left: 120px;
+  height: 100%;
+  top: 0;
+  border-radius: 0 20px 20px 0;
+  display: none;
+  width: calc(100% - 120px);
+  color: gray;
+  overflow: hidden;
+}
+
+#navBarHeader #deptos .depto .family ul {
+  list-style-type: none;
+  text-transform: lowercase;
+}
+
+#navBarHeader #deptos .depto .family ul li {
+  line-height: 20px;
+}
+
+#navBarHeader #deptos .depto .family ul li a {
+  color: #333 !important;
+  text-decoration: none;
+}
+
+#navBarHeader #deptos .depto .family ul li a:hover {
+  text-decoration: underline;
+}
+
+#navBarHeader #deptos .depto .family#escritura {
+  background-image: url(../../images/escritorio.jpg);
+}
+#navBarHeader #deptos .depto .family#escolar {
+  background-image: url(../../images/escolar.jpg);
+}
+#navBarHeader #deptos .depto .family#oficina {
+  background-image: url(../../images/oficina.jpg);
+}
+
+@media screen and (max-width: 767px) {
+  .headerPaper .header-row .header-form .header-form__input {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #navBarHeader {
+    top: 52px;
+    width: 100%;
+    position: fixed;
+    height: 520px;
+    border-radius: 0;
+  }
+  #navBarHeader #deptos {
+    border-radius: 0;
+  }
+  #navBarHeader #deptos .depto .family {
+    border-radius: 0;
+  }
+}
