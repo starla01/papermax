@@ -866,3 +866,17 @@ footer {
     width: 25%;
   }
 }
+
+.main-home.contain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-home.contain .contain-center{
+  max-width: 1200px!important;
+}
+
+
+

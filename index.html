@@ -6,18 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>HOME</title>
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.css">
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/icons.css" />
   <link rel="stylesheet" href="./css/animate.css" />
   <link rel="stylesheet" href="./css/components/_navHeader.css" />
+  <link rel="stylesheet" href="./css/components/_cardProduct.css" />
+  <link rel="stylesheet" href="./css/components/_boxBanners.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="./assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="header container">
+  <header class="headerPaper contain">
     <div class="row header-row">
       <div class="header-menu">
         <label for="btn-menu" id="labelMenu" class="header-menu__label"><img src="./icons/menu.png"
@@ -102,41 +110,38 @@
       <div class="header-form" id="form">
         <input type="search" class="header-form__input" id="inputSearch"
           placeholder="Busca por producto, marca o departamento" />
-          <div id="suggest">
-            <ul>
-              <a href="/">
-                <li><i class="material-icons">
-                    search
-                  </i>Papel crepe</li>
-              </a>
+        <div id="suggest">
+          <ul>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Papel crepe</li>
+            </a>
 
-              <a href="/">
-                <li><i class="material-icons">
-                    search
-                  </i>Compas de presición</li>
-              </a>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
 
-              <a href="/">
-                <li><i class="material-icons">
-                    search
-                  </i>Compas de presición</li>
-              </a>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
 
-              <a href="/">
-                <li><i class="material-icons">
-                    search
-                  </i>Compas de presición</li>
-              </a>
-
-              <a href="/">
-                <li><i class="material-icons">
-                    search
-                  </i>Compas de presición</li>
-              </a>
-
-
-            </ul>
-          </div>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+          </ul>
+        </div>
         <button class="header-form__btn" id="btnSearch">
           <img src="./icons/search.png" alt="search" id="imgSearch" />
         </button>
@@ -149,6 +154,8 @@
             <span id="triangle"></span>
             <div class="menuLogin" id="withLogin">
               <ul>
+                <li><a href="/registro">
+                    Hola, Fernando</a></li>
                 <li><a href="/registro">
                     <i class="material-icons">
                       favorite
@@ -189,46 +196,657 @@
         <div class="header-botones__tienda">
           <img src="./icons/shop.png" alt="shop" class="shop" />
           <div id="list_cart">
-              <h3 id="titleSmartCart">Mi Carrito</h3>
-              <div id="listItems">
-                <ul>
-                  <li>
-                    <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
-                    <span class="price">$299.90</span>
-                  </li>
-                  <li>
-                    <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
-                    <span class="price">$19.90</span>
-                  </li>
-                  <li>
-                    <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
-                    <span class="price">$34.90</span>
-                  </li>
-                  <li>
-                    <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span></div>
-                    <span class="price">$699.90</span>
-                  </li>
-                </ul>
+            <h3 id="titleSmartCart">Mi Carrito</h3>
+            <div id="listItems">
+              <ul>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
+                  <span class="price">$299.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
+                  <span class="price">$19.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
+                  <span class="price">$34.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
+                  </div>
+                  <span class="price">$699.90</span>
+                </li>
+              </ul>
+            </div>
+            <div id="totalCart">
+              <div id="subTotal">
+                <span>Subtotal</span>
+                <span><b>$1,078.00</b></span>
               </div>
-              <div id="totalCart">
-                <div id="subTotal">
-                  <span>Subtotal</span>
-                  <span><b>$1,078.00</b></span>
-                </div>
-                <div id="viewCart">
-                  Ir a Carrito
-                </div>
+              <div id="viewCart">
+                Ir a Carrito
               </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- MAIN -->
-  <div class="main-home container">
 
-    Home
+  <!-- MAIN -->
+  <div class="main-home contain">
+    <div class="contain-center">
+        <!--Main Banner-->
+        <div class="js-slick-carousel u-slick"
+          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4">
+          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+            <div class="space-5">
+            </div>
+          </div>
+          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+            <div class="space-5">
+            </div>
+          </div>
+          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+            <div class="space-5">
+            </div>
+          </div>
+        </div>
+        <!--Main Banner-->
+
+        <div style="text-align: center; margin: 10px 0 0 0;">
+          <h1><b>Productos Recomendados</b></h1>
+        </div>
+
+
+        <!--Carrusel products recomendados-->
+        <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+          data-variable-width="true" data-infinite="true"
+          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+          data-responsive='[{
+                 "breakpoint": 992,
+                 "settings": {
+                   "slidesToShow": 2
+                 }
+               }, {
+                 "breakpoint": 768,
+                 "settings": {
+                   "slidesToShow": 1
+                 }
+               }, {
+                 "breakpoint": 554,
+                 "settings": {
+                   "slidesToShow": 1
+                 }
+               }]'>
+          <div class="js-slide card_product">
+            <div class="space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product">
+                  $67.50
+                </div>
+                <div class="buy_button">
+                  <i class="material-icons">
+                    add_shopping_cart
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Carrusel products recomendados-->
+
+        <!--BoxBanners line 1-->
+        <div class="box-banners">
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box1.png" />
+            </a>
+          </div>
+          <div class="banner_large">
+            <a href="/lista">
+              <img src="images/box2.png" />
+            </a>
+          </div>
+        </div>
+        <!--BoxBanners line 1-->
+
+        <!--BoxBanners line 2-->
+        <div class="box-banners">
+          <div class="banner_large">
+            <a href="/lista">
+              <img src="images/box3.png" />
+            </a>
+          </div>
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box4.png" />
+            </a>
+          </div>
+        </div>
+        <!--BoxBanners line 2-->
+
+        <div style="text-align: center; margin: 10px 0 0 0;">
+          <h1><b>Productos más buscados</b></h1>
+        </div>
+        <!--Carrusel products mas buscados-->
+        <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+          data-variable-width="true" data-infinite="true"
+          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+          data-responsive='[{
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }, {
+                   "breakpoint": 554,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+          <div class="js-slide card_product">
+            <div class="space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product">
+                  $67.50
+                </div>
+                <div class="buy_button">
+                  <i class="material-icons">
+                    add_shopping_cart
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="js-slide card_product">
+            <div class=" space-0">
+              <div class="data_product">
+                <div class="image_product">
+                  <a href="/detalle-de-producto">
+                    <img src="images/imgLg.png" width="170" />
+                  </a>
+                </div>
+                <div class="name_product">
+                  <a href="/detalle-de-producto">
+                    Lápices de colores Crayola 4012 con 12
+                  </a>
+                </div>
+                <div class="price_product promo">
+                  $57.50
+                </div>
+                <div class="last_price_product">
+                  $67.50
+                </div>
+                <a href="/cart">
+                  <div class="buy_button">
+                    <i class="material-icons">
+                      add_shopping_cart
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Carrusel products mas buscados-->
+        <br />
+          <!--Carrusel de marcas-->
+          <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+            data-variable-width="true" data-infinite="true"
+            data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+            data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+            data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+            data-responsive='[{
+                                     "breakpoint": 992,
+                                     "settings": {
+                                       "slidesToShow": 2
+                                     }
+                                   }, {
+                                     "breakpoint": 768,
+                                     "settings": {
+                                       "slidesToShow": 1
+                                     }
+                                   }, {
+                                     "breakpoint": 554,
+                                     "settings": {
+                                       "slidesToShow": 1
+                                     }
+                                   }]'>
+            <div class="js-slide card_brand">
+              <div class="space-0">
+                <div class="data_brand">
+                  <a href="/brand-laorusse">
+                    <img src="images/brand_laourusse.png" width="170" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="js-slide card_brand">
+              <div class="space-0">
+                <div class="data_brand">
+                  <a href="/brand-baco">
+                    <img src="images/brand_baco.png" width="170" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="js-slide card_brand">
+              <div class="space-0">
+                <div class="data_brand">
+                  <a href="/brand-baco">
+                    <img src="images/brand_razor.png" width="170" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="js-slide card_brand">
+              <div class="space-0">
+                <div class="data_brand">
+                  <a href="/brand-laorusse">
+                    <img src="images/brand_laourusse.png" width="170" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="js-slide card_brand">
+              <div class="space-0">
+                <div class="data_brand">
+                  <a href="/brand-baco">
+                    <img src="images/brand_baco.png" width="170" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carrusel de marcas-->
+          <br />
+        <!--BoxBanners line 4-->
+        <div class="box-banners">
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box_computo.png" />
+            </a>
+          </div>
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box_manualidades.png" />
+            </a>
+          </div>
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box_papeles.png" />
+            </a>
+          </div>
+        </div>
+        <!--BoxBanners line 4-->
+
+        <!--BoxBanners line 4-->
+        <div class="box-banners">
+          <div class="banner_small">
+            <a href="/lista">
+              <img src="images/box6.png" />
+            </a>
+          </div>
+          <div class="banner_large">
+            <a href="/lista">
+              <img src="images/box5.png" />
+            </a>
+          </div>
+        </div>
+        <!--BoxBanners line 4-->
+    </div>
+
 
   </div>
 
@@ -314,8 +932,28 @@
   </footer>
 
   <!-- Libreria para sliders -->
-  <script src="./js/jquery-3.4.1.min.js"></script>
+  <!-- JS Global Compulsory -->
+
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="./assets/js/components/hs.slick-carousel.js"></script>
+
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="./js/scripts.js"></script>
+
+    <script>
+      $(document).on('ready', function () {
+        // initialization of forms
+        $.HSCore.components.HSFocusState.init();
+        $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+      });
+    </script>
+  <!-- JS Front -->
+
 </body>
 
 </html>

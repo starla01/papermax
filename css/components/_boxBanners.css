@@ -1,0 +1,24 @@
+.box-banners {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+}
+.banner_small {
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.banner_large {
+  width: 66.66%;
+  box-sizing: border-box !important;
+}
+
+.box-banners .banner_small,
+.banner_large {
+  border: 7px solid white;
+  box-sizing: border-box;
+}
+
+.box-banners .banner_small img,
+.banner_large img {
+  width: 100%;
+}
