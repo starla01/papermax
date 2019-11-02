@@ -1,0 +1,36 @@
+.row.main-form__row {
+  width: 600px !important;
+}
+
+.main-form__form {
+  width: 100% !important;
+}
+
+.btn.btn-primary.full {
+  width: 100%;
+}
+
+.centerElements {
+  text-align: center;
+}
+
+.loginButton {
+  margin: 0 20px;
+  position: relative;
+  line-height: 70px;
+}
+
+@media screen and (max-width: 680px) {
+  .row.main-form__row {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .row.main-form__row {
+    border: 0 !important;
+  }
+  .main-form.contain {
+    margin-top: 0 !important;
+  }
+}
