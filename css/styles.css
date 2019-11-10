@@ -720,10 +720,8 @@ html {
 
 footer {
   background-color: #2F80ED;
-  margin-top: 2rem; }
-  @media screen and (min-width: 1024px) {
-    footer {
-      margin-top: 1.5rem; } }
+   }
+
   footer .redesSociales {
     border-top: 1px solid #2F80ED;
     background-color: #F4F6F9;

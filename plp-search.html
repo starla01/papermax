@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>LOGIN</title>
+  <title>Product list</title>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/icons.css" />
@@ -24,7 +24,8 @@
   <script src="./assets/js/components/hs.focus-state.js"></script>
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="./assets/css/theme.css">
-  <link rel="stylesheet" href="css/components/_submit.css">
+  <link rel="stylesheet" href="css/views/product-list.css">
+
 </head>
 
 <body>
@@ -243,71 +244,255 @@
 
 
   <!-- MAIN -->
-  <div class="main-form contain">
-    <div class="row main-form__row">
-      <div class="main-form__btnSociales">
-        <a href="#"><img src="./images/btn_face.png" alt="Facebook" /></a>
-        <a href="#"><img src="./images/btn_google.png" alt="Google" /></a>
-      </div>
 
-      <div class="main-form__separador"></div>
-
-      <div class="main-form__form">
-        <form>
-
-          <!-- From of the template -->
-          <div class="row">
-            <div class="col-md-12 mb-3 ">
-              <div class="js-focus-state input-group mb-2">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <i class="material-icons">
-                      account_circle
-                    </i>
-                  </span>
-                </div>
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-              </div>
-
-              <div class="js-focus-state input-group mb-2">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <i class="material-icons">
-                      remove_red_eye
-                    </i>
-                  </span>
-                </div>
-                <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+  <div id="product-list">
+    <div id="result-container">
+      <div id="filters">Filtros</div>
+      <div id="result-list">
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
               </div>
             </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
           </div>
-          <!-- From of the template -->
-
-          <div class="main-form__txt">
-            <p>
-              Antes de enviar este formulario, debes leer la siguiente
-              <a href="#">información básica sobre protección de datos.</a> Al
-              pulsar el botón de envío manifiestas haber leído esta
-              información.
-            </p>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Maped</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
           </div>
-
-          <div class="main-form__btn">
-            <input id="sesion-submit" type="submit" value="Iniciar sesión" />
-            <input type="button" value="¿Olvidaste tu contraseña?" />
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod3.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Bic</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Berol</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div class="main-form__separadorHoizontal"></div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Maped</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod3.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Bic</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Berol</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div class="main-form__registro">
-        <h3 class="subtitle">¿Aún no eres usuario?</h3>
-        <p class="main-form__registro__txt">
-          Si no estás registrado te aconsejo que te registres, es gratis y
-          tendrás acceso a todas nuestras ofertas y promociones.
-        </p>
-        <button class="main-form__registro__btn">Regístrate ahora</button>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Maped</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod3.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Bic</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="item">
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod2.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Berol</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <a>
+                <div class="button">
+                  Comprar
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
