@@ -1,0 +1,69 @@
+#product-not-found {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#image {
+  margin: 50px 0 0 0;
+}
+
+#image #circle-mask {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#image #circle-mask #book {
+  font-size: 200px;
+  color: #c6c6c6;
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  background-color: white;
+}
+
+#image #circle-mask #search {
+  position: absolute;
+  z-index: 9;
+  font-size: 200px;
+  color: #2f80ed;
+}
+
+#image #out-book {
+  font-size: 90px;
+  position: relative;
+  top: -40px;
+  color: #a9a9a9;
+}
+
+#label-PNF {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#label-PNF h1 {
+  font-weight: 700;
+  margin: 0;
+}
+#label-PNF h3 {
+  font-size: 22px;
+}
+
+#error-500 {
+  font-size: 240px;
+  color: #f2994a;
+}
+
+#image p {
+  font-size: 200px;
+  margin: 0;
+  padding: 0;
+  line-height: 200px;
+  color: #377dff;
+}
