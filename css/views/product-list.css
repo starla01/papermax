@@ -42,24 +42,11 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
   overflow: hidden;
+  position: relative;
 }
 
 #product-list #result-container #result-list .product .item:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.16);
-}
-
-#product-list #result-container #result-list .product .item:hover > .top {
-  background: #b2fefa; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2f80ed,
-    #b2fefa
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2f80ed,
-    #b2fefa
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #product-list
@@ -69,7 +56,7 @@
   .item:hover
   > .top
   .image {
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 #product-list #result-container #result-list .product .item .top {
@@ -94,7 +81,7 @@
 }
 
 #product-list #result-container #result-list .product .item .info .name {
-  font-weight: 300;
+  font-weight: 600;
   margin: 0;
   line-height: 18px;
   font-size: 14px;
@@ -105,7 +92,7 @@
   margin: 0;
   line-height: 18px;
   font-size: 12px;
-  color: #0cb1d2;
+  color: #2f80ed;
 }
 
 #product-list #result-container #result-list .product .item .info .lastPrice {
@@ -115,13 +102,28 @@
   font-size: 12px;
   text-decoration: line-through;
 }
+
 #product-list #result-container #result-list .product .item .info .Price {
   margin: 0;
   padding: 0;
   line-height: 16px;
   font-weight: 600;
-  color: #009fbf;
+  color: #2f80ed;
   margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.product .item .favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 3;
+  color: gray;
+}
+
+.product .item .favorite i:hover {
+  color: red;
 }
 
 #product-list #result-container #result-list .product .item .info a .button {
@@ -129,8 +131,10 @@
   border-radius: 30px;
   padding: 5px 0;
   text-align: center;
-  color: white;
+  color: #2f80ed;
   font-weight: 700;
+  border: 1px solid #2f80ed;
+  background: #fff; /* fallback for old browsers */
 }
 
 #product-list
@@ -141,15 +145,6 @@
   > .info
   a
   .button {
-  background: #b2fefa; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0cb1d2,
-    #0ed2f7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #0cb1d2,
-    #0ed2f7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  background: #2f80ed; /* fallback for old browsers */
 }
