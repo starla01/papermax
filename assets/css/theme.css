@@ -555,27 +555,27 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 780px) {
   .container {
-    max-width: 540px;
+    max-width: 760px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .container {
-    max-width: 720px;
+    max-width: 920px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
   .container {
-    max-width: 960px;
+    max-width: 1050px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
-    max-width: 1140px;
+    max-width: 1366px;
   }
 }
 
@@ -595,6 +595,15 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
 }
+
+.container .row :nth-child(1) { order: 1; }
+.container .row :nth-child(2) { order: 2; }
+
+@media (max-width: 992px) {
+  .container .row :nth-child(1) { order: 2; }
+  .container .row :nth-child(2) { order: 1; }
+}
+
 
 .no-gutters {
   margin-right: 0;
@@ -6133,6 +6142,8 @@ a.close.disabled {
     max-width: 1140px;
   }
 }
+
+
 
 .tooltip {
   position: absolute;

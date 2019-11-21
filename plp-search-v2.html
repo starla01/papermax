@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Product list</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/components/_navHeader.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <!-- CSS Front Template -->
+
+  <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="./assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="css/views/product-list.css">
+
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="headerPaper contain">
+    <div class="row header-row">
+      <div class="header-menu">
+        <label for="btn-menu" id="labelMenu" class="header-menu__label"><img src="./icons/menu.png"
+            alt="menuHamburguesa" id="imgMenu" /></label>
+
+        <span class="header-menu__txt">DEPARTAMENTOS</span>
+        <div id="navBarHeader">
+          <div id="deptos">
+            <div class="depto">
+              <div>Oficina</div>
+              <div class="family" id="oficina">
+                <ul>
+                  <li><a href="/">BROCHE PARA ARCHIVO</a></li>
+                  <li><a href="/">BROCHES LATONADOS</a></li>
+                  <li><a href="/">CLIPS</a></li>
+                  <li><a href="/">AGARRAPAPELES BULL DOG</a></li>
+                  <li><a href="/">AGARRAPAPELES TIPO PINZA</a></li>
+                  <li><a href="/">GRAPAS</a></li>
+                  <li><a href="/">CARPETA TIPO PRESSBOARD</a></li>
+                  <li><a href="/">CARPETAS DE VINIL "O"</a></li>
+                  <li><a href="/">CARPETAS DE VINIL "D"</a></li>
+                  <li><a href="/">GUIAS PARA ARCHIVO</a></li>
+                  <li><a href="/">PROTECTORES, SEPARADORES E INDICES</a></li>
+                  <li><a href="/">TABLAS AGARRAPAPELES</a></li>
+                  <li><a href="/">CHINCHES</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <div>Escritura</div>
+              <div class="family" id="escritura">
+                <ul>
+                  <li><a href="/">MARCADOR PERMANENTE BARRIL DE ALUMINIO</a></li>
+                  <li><a href="/">MARCADOR PERMANENTE BARRIL DE PLASTICO</a></li>
+                  <li><a href="/">MARCADOR PERMANENTE PUNTO FINO</a></li>
+                  <li><a href="/">MARCADOR TIZAPEN BARRIL DE ALUMINIO</a></li>
+                  <li><a href="/">MARCADOR TIZAPEN BARRIL DE PLASTICO</a></li>
+                  <li><a href="/">RESALTADOR FLOURESCENTE</a></li>
+                  <li><a href="/">RESALTADOR FLUORESCENTE FINO</a></li>
+                  <li><a href="/">MARCATEXTOS</a></li>
+                  <li><a href="/">MARCADOR BASE AGUA</a></li>
+                  <li><a href="/">PLUMINES</a></li>
+                  <li><a href="/">MARCADORES DE CERA</a></li>
+                  <li><a href="/">CRAYONES</a></li>
+                  <li><a href="/">LAPICES</a></li>
+                  <li><a href="/">BOLIGRAFO</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <div>Escolar</div>
+              <div class="family" id="escolar">
+                <ul>
+                  <li><a href="/">Gises</a></li>
+                  <li><a href="/">Acuarelas</a></li>
+                  <li><a href="/">COLORES PARA CARTEL</a></li>
+                  <li><a href="/">PINTURA ACRILICA</a></li>
+                  <li><a href="/">Plastilina</a></li>
+                  <li><a href="/">Gomas</a></li>
+                  <li><a href="/">Tijeras</a></li>
+                  <li><a href="/">Cortadores</a></li>
+                  <li><a href="/">Abacos</a></li>
+                  <li><a href="/">Manguillo y plumilla</a></li>
+                  <li><a href="/">Compaces</a></li>
+                  <li><a href="/">Estuches geometricos</a></li>
+                  <li><a href="/">Equipos geometricos</a></li>
+                  <li><a href="/">Reglas</a></li>
+                  <li><a href="/">Reglas T</a></li>
+                  <li><a href="/">Transportadores</a></li>
+                  <li><a href="/">Transportadores 360</a></li>
+                  <li><a href="/">Escuadras</a></li>
+                  <li><a href="/">Escuadras profesionales</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo">
+        <img class="header-logo__img" src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="header-form" id="form">
+        <input type="search" class="header-form__input" id="inputSearch"
+          placeholder="Busca por producto, marca o departamento" />
+        <div id="suggest">
+          <ul>
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Papel crepe</li>
+            </a>
+
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+
+            <a href="/">
+              <li><i class="material-icons">
+                  search
+                </i>Compas de presición</li>
+            </a>
+
+
+          </ul>
+        </div>
+        <button class="header-form__btn" id="btnSearch">
+          <img src="./icons/search.png" alt="search" id="imgSearch" />
+        </button>
+      </div>
+      <div class="header-botones">
+        <div class="header-botones__cuenta">
+          <img src="./icons/user.png" alt="user" class="user" />
+          <span id="hello">Hola, </span><span id="name">Fernando</span>
+          <div id="myAccount">
+            <span id="triangle"></span>
+            <div class="menuLogin" id="withLogin">
+              <ul>
+                <li><a href="/registro">
+                    Hola, Fernando</a></li>
+                <li><a href="/registro">
+                    <i class="material-icons">
+                      favorite
+                    </i>Mis favoritos</a></li>
+                <li><a href="/login">
+                    <i class="material-icons">
+                      shopping_basket
+                    </i>Mis pedidos</a></li>
+                <li><a href="/registro">
+                    <i class="material-icons">
+                      dashboard
+                    </i>Mi cuenta</a></li>
+                <li><a href="/registro">
+                    <i class="material-icons">
+                      g_translate
+                    </i>Cambiar idioma</a></li>
+                <li><a href="/login">
+                    <i class="material-icons">
+                      input
+                    </i> Cerrar sesión</a></li>
+              </ul>
+            </div>
+            <div class="menuLogin" id="withOutLogin">
+              <ul>
+                <li><a href="/registro">
+                    <i class="material-icons">
+                      account_box
+                    </i>Registro</a></li>
+                <li><a href="/login">
+                    <i class="material-icons">
+                      assignment_ind
+                    </i>Iniciar sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="centro"></div>
+        <div class="header-botones__tienda">
+          <img src="./icons/shop.png" alt="shop" class="shop" />
+          <div id="list_cart">
+            <h3 id="titleSmartCart">Mi Carrito</h3>
+            <div id="listItems">
+              <ul>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
+                  <span class="price">$299.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
+                  <span class="price">$19.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
+                  <span class="price">$34.90</span>
+                </li>
+                <li>
+                  <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
+                  </div>
+                  <span class="price">$699.90</span>
+                </li>
+              </ul>
+            </div>
+            <div id="totalCart">
+              <div id="subTotal">
+                <span>Subtotal</span>
+                <span><b>$1,078.00</b></span>
+              </div>
+              <div id="viewCart">
+                Ir a Carrito
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Products & Filters Section -->
+    <div class="container space-bottom-lg-3">
+      <div class="row">
+
+        <!-- Filters -->
+        <div class="col-lg-3">
+          <form>
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Price</h4>
+
+              <!-- Range Slider -->
+              <span class="irs js-irs-0 u-range-slider u-range-slider-indicator u-range-slider-grid irs-with-grid"><span
+                  class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span
+                      class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min"
+                    style="display: none; visibility: visible;">0</span><span class="irs-max"
+                    style="display: none; visibility: visible;">1</span><span class="irs-from"
+                    style="visibility: visible; left: 15.0125%;">$87</span><span class="irs-to"
+                    style="visibility: visible; left: 88.2614%;">$475</span><span class="irs-single"
+                    style="visibility: hidden; left: 47.2138%;">$87 — $475</span></span><span class="irs-grid"
+                  style="width: 95.2941%; left: 2.25294%;"><span class="irs-grid-pol" style="left: 0%"></span><span
+                    class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -3.92157%;">0</span><span
+                    class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small"
+                    style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span
+                    class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                    style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                    style="left: 25%; visibility: visible; margin-left: -3.92157%;">125</span><span
+                    class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small"
+                    style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span
+                    class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                    style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                    style="left: 50%; visibility: visible; margin-left: -3.92157%;">250</span><span
+                    class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small"
+                    style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span
+                    class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                    style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                    style="left: 75%; visibility: visible; margin-left: -3.92157%;">375</span><span
+                    class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small"
+                    style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span
+                    class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                    style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                    style="left: 100%; margin-left: -3.92157%;">500</span></span><span class="irs-bar"
+                  style="left: 18.9341%; width: 73.9482%;"></span><span class="irs-shadow shadow-from"
+                  style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span
+                  class="irs-slider from type_last" style="left: 16.5812%;"></span><span class="irs-slider to"
+                  style="left: 90.5294%;"></span></span><input class="js-range-slider irs-hidden-input" type="text"
+                data-extra-classes="u-range-slider u-range-slider-indicator u-range-slider-grid" data-type="double"
+                data-grid="true" data-hide-from-to="false" data-prefix="$" data-min="0" data-max="500" data-from="25"
+                data-to="475" data-result-min="#rangeSliderExample3MinResult"
+                data-result-max="#rangeSliderExample3MaxResult" tabindex="-1" readonly="">
+              <div class="d-flex justify-content-between mt-4">
+                <input type="text" class="form-control form-control-sm max-width-10" id="rangeSliderExample3MinResult">
+                <input type="text" class="form-control form-control-sm max-width-10 mt-0"
+                  id="rangeSliderExample3MaxResult">
+              </div>
+              <!-- End Range Slider -->
+            </div>
+
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Gender</h4>
+
+              <!-- Checkboxes -->
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="genderMen" checked="">
+                  <label class="custom-control-label text-lh-md" for="genderMen">Men</label>
+                </div>
+                <small>73</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="genderWomen" checked="">
+                  <label class="custom-control-label text-lh-md" for="genderWomen">Women</label>
+                </div>
+                <small>51</small>
+              </div>
+              <!-- End Checkboxes -->
+            </div>
+
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Brand</h4>
+
+              <!-- Checkboxes -->
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="brandAdidas">
+                  <label class="custom-control-label" for="brandAdidas">Adidas</label>
+                </div>
+                <small>16</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="brandNewBalance">
+                  <label class="custom-control-label" for="brandNewBalance">New Balance</label>
+                </div>
+                <small>8</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="brandNike">
+                  <label class="custom-control-label" for="brandNike">Nike</label>
+                </div>
+                <small>35</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="brandFredPerry">
+                  <label class="custom-control-label" for="brandFredPerry">Fred Perry</label>
+                </div>
+                <small>5</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="brandTnf">
+                  <label class="custom-control-label" for="brandTnf">The North Face</label>
+                </div>
+                <small>1</small>
+              </div>
+              <!-- End Checkboxes -->
+
+              <!-- View More - Collapse -->
+              <div class="collapse" id="collapseBrand">
+                <div
+                  class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brandGucci">
+                    <label class="custom-control-label" for="brandGucci">Gucci</label>
+                  </div>
+                  <small>5</small>
+                </div>
+                <div
+                  class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brandMango">
+                    <label class="custom-control-label" for="brandMango">Mango</label>
+                  </div>
+                  <small>1</small>
+                </div>
+              </div>
+              <!-- End View More - Collapse -->
+
+              <!-- Link -->
+              <a class="link link-collapse small font-size-1" data-toggle="collapse" href="#collapseBrand" role="button"
+                aria-expanded="false" aria-controls="collapseBrand">
+                <span class="link-collapse__default">View more</span>
+                <span class="link-collapse__active">View less</span>
+                <span class="link__icon ml-1">
+                  <span class="link__icon-inner">+</span>
+                </span>
+              </a>
+              <!-- End Link -->
+            </div>
+
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Size</h4>
+
+              <!-- Checkboxes -->
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="sizeS" checked="">
+                  <label class="custom-control-label" for="sizeS">S</label>
+                </div>
+                <small>27</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="sizeM">
+                  <label class="custom-control-label" for="sizeM">M</label>
+                </div>
+                <small>18</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="sizeL" checked="">
+                  <label class="custom-control-label" for="sizeL">L</label>
+                </div>
+                <small>0</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="sizeXL">
+                  <label class="custom-control-label" for="sizeXL">XL</label>
+                </div>
+                <small>1</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="sizeXXL">
+                  <label class="custom-control-label" for="sizeXXL">XXL</label>
+                </div>
+                <small>2</small>
+              </div>
+              <!-- End Checkboxes -->
+            </div>
+
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Category</h4>
+
+              <!-- Checkboxes -->
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="categoryTshirt" checked="">
+                  <label class="custom-control-label text-lh-md" for="categoryTshirt">T-shirt</label>
+                </div>
+                <small>73</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="categoryShoes">
+                  <label class="custom-control-label text-lh-md" for="categoryShoes">Shoes</label>
+                </div>
+                <small>0</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="categoryAccessories" checked="">
+                  <label class="custom-control-label text-lh-md" for="categoryAccessories">Accessories</label>
+                </div>
+                <small>51</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="categoryTops" checked="">
+                  <label class="custom-control-label" for="categoryTops">Tops</label>
+                </div>
+                <small>5</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="categoryBottom">
+                  <label class="custom-control-label" for="categoryBottom">Bottom</label>
+                </div>
+                <small>11</small>
+              </div>
+              <!-- End Checkboxes -->
+
+              <!-- View More - Collapse -->
+              <div class="collapse" id="collapseCategory">
+                <div
+                  class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="categoryShorts">
+                    <label class="custom-control-label" for="categoryShorts">Shorts</label>
+                  </div>
+                  <small>5</small>
+                </div>
+                <div
+                  class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="categoryHats">
+                    <label class="custom-control-label" for="categoryHats">Hats</label>
+                  </div>
+                  <small>3</small>
+                </div>
+                <div
+                  class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-1">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="categorySocks">
+                    <label class="custom-control-label" for="categorySocks">Socks</label>
+                  </div>
+                  <small>8</small>
+                </div>
+              </div>
+              <!-- End View More - Collapse -->
+
+              <!-- Link -->
+              <a class="link link-collapse small font-size-1" data-toggle="collapse" href="#collapseCategory"
+                role="button" aria-expanded="false" aria-controls="collapseCategory">
+                <span class="link-collapse__default">View more</span>
+                <span class="link-collapse__active">View less</span>
+                <span class="link__icon ml-1">
+                  <span class="link__icon-inner">+</span>
+                </span>
+              </a>
+              <!-- End Link -->
+            </div>
+
+            <div class="border-bottom pb-4 mb-4">
+              <h4 class="h6 mb-3">Rating</h4>
+
+              <!-- Checkboxes -->
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-0">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="rating1">
+                  <label class="custom-control-label" for="rating1">
+                    <span class="d-block text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                    </span>
+                  </label>
+                </div>
+                <small>3</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-0">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="rating2">
+                  <label class="custom-control-label" for="rating2">
+                    <span class="d-block text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                    </span>
+                  </label>
+                </div>
+                <small>10</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-0">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="rating3">
+                  <label class="custom-control-label" for="rating3">
+                    <span class="d-block text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="far fa-star text-muted"></span>
+                      <span class="far fa-star text-muted"></span>
+                    </span>
+                  </label>
+                </div>
+                <small>34</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-0">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="rating4">
+                  <label class="custom-control-label" for="rating4">
+                    <span class="d-block text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="far fa-star text-muted"></span>
+                    </span>
+                  </label>
+                </div>
+                <small>86</small>
+              </div>
+              <div
+                class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-0">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="rating5">
+                  <label class="custom-control-label" for="rating5">
+                    <span class="d-block text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                    </span>
+                  </label>
+                </div>
+                <small>102</small>
+              </div>
+              <!-- End Checkboxes -->
+            </div>
+
+            <button type="button" class="btn btn-sm btn-block btn-soft-secondary transition-3d-hover">Clear All</button>
+          </form>
+        </div>
+        <!-- End Filters -->
+
+        <div class="col-lg-9">
+          <!-- Sorting -->
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-3 mb-lg-0">
+              <span class="text-secondary font-size-1 font-weight-normal ml-1">110 products</span>
+            </div>
+
+            <div class="col-lg-6 align-self-lg-end text-lg-right">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <!-- Select -->
+                  <select class="js-select selectpicker dropdown-select" data-size="10" data-width="fit"
+                    data-style="btn-soft-secondary btn-xs">
+                    <option value="mostRecent" selected>Sort by</option>
+                    <option value="newest">Newest first</option>
+                    <option value="priceHighLow">Price (high - low)</option>
+                    <option value="priceLowHigh">Price (low - high)</option>
+                    <option value="topSellers">Top sellers</option>
+                  </select>
+                  <!-- End Select -->
+                </li>
+                <li class="list-inline-item">
+                  <!-- Select -->
+                  <select class="js-select selectpicker dropdown-select" data-width="fit"
+                    data-style="btn-soft-secondary btn-xs">
+                    <option value="alphabeticalOrderSelect1" selected>A-to-Z</option>
+                    <option value="alphabeticalOrderSelect2">Z-to-A</option>
+                  </select>
+                  <!-- End Select -->
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn btn-xs btn-soft-secondary" href="products-grid.html">
+                    <span class="fas fa-th-large"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Sorting -->
+
+          <ul class="list-unstyled">
+            <li class="listItems">
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="item">
+                  <div class="favorite">
+                    <i class="material-icons">
+                      favorite_border
+                    </i>
+                  </div>
+                  <div class="top">
+                    <div class="image">
+                      <img src="./images/prod1.png" />
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+                    <p class="brand">Crayola</p>
+                    <p class="lastPrice">$349.00</p>
+                    <p class="Price">$299.00</p>
+                    <a>
+                      <div class="button">
+                        Añadir a carrito
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="py-3"></div>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-between align-items-center">
+              <li class="page-item ml-0">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo; Prev</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <div class="d-flex align-items-center">
+                  <span class="d-none d-sm-inline-block text-secondary">Page:</span>
+                  <select class="custom-select custom-select-sm w-auto mx-2">
+                    <option value="quantity1">1</option>
+                    <option value="quantity2">2</option>
+                    <option value="quantity3">3</option>
+                    <option value="quantity4">4</option>
+                    <option value="quantity5">5</option>
+                    <option value="quantity6">6</option>
+                  </select>
+                  <span class="d-none d-sm-inline-block text-secondary">of 6</span>
+                </div>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">Next &raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+
+          <!-- Divider -->
+          <div class="d-lg-none">
+            <hr class="my-11">
+          </div>
+          <!-- End Divider -->
+        </div>
+
+      </div>
+    </div>
+    <!-- End Products & Filters Section -->
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="redesSociales">
+      <div class="red">
+        <a href="#">
+          <img src="./icons/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="./icons/Twitter.png" alt="Twitter" />
+        </a>
+        <a href="#">
+          <img src="./icons/Instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="contenedorContacto">
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Nosotros</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>¿Quiénes somos?</span>
+          </a>
+          <a href="#">
+            <span>Sucursales</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Atención a Clientes</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Preguntas Frecuentes</span>
+          </a>
+          <a href="#">
+            <span>Facturación Tiendas</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Términos y Condiciones</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Aviso de Privacidad</span>
+          </a>
+          <a href="#">
+            <span>Términos y Condiciones</span>
+          </a>
+          <a href="#">
+            <span>Métodos de pago</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Tienda en Línea</h4>
+        </div>
+        <div class="opcionesCont">
+          <span class="spanImage"><img src="./icons/phone.png" alt="phone" class="phone" /></span>
+          <span class="text">55-1234-5678</span>
+          <br />
+          <br />
+          <span><img src="./icons/mail.png" alt="mail" class="mail" /></span>
+          <span class="text mailText">enlinea@papermax.com.mx</span>
+        </div>
+      </div>
+    </div>
+    <div class="lineaFooter"></div>
+    <br />
+    <br />
+    <br />
+  </footer>
+
+  <!-- Libreria para sliders -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../Site/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../Site/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../Site/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../Site/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../Site/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="../Site/assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../Site/assets/js/hs.core.js"></script>
+  <script src="../Site/assets/js/components/hs.header.js"></script>
+  <script src="../Site/assets/js/components/hs.unfold.js"></script>
+  <script src="../Site/assets/js/components/hs.focus-state.js"></script>
+  <script src="../Site/assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../Site/assets/js/components/hs.validation.js"></script>
+  <script src="../Site/assets/js/components/hs.show-animation.js"></script>
+  <script src="../Site/assets/js/components/hs.selectpicker.js"></script>
+  <script src="../Site/assets/js/components/hs.range-slider.js"></script>
+  <script src="../Site/assets/js/components/hs.svg-injector.js"></script>
+  <script src="../Site/assets/js/components/hs.go-to.js"></script>
+
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of select picker
+      $.HSCore.components.HSSelectPicker.init('.js-select');
+
+      // initialization of forms
+      $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+
+</html>
