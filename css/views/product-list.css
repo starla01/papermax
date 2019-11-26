@@ -2,11 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .product {
-  width: 240px;
-  height: 370px;
+  width: 230px;
+  height: 420px;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -21,7 +23,6 @@
 @media (min-width: 480px) {
   .product {
     width: 50%;
-    height: 400px;
   }
 }
 
@@ -45,7 +46,7 @@
 
 @media (min-width: 1400px) {
   .product {
-    width: 240px;
+    width: 236px;
   }
 }
 
@@ -142,7 +143,7 @@
 }
 
 .product .item .info a .button {
-  width: 100%;
+  width: 90%;
   border-radius: 30px;
   padding: 5px 0;
   text-align: center;
@@ -150,9 +151,87 @@
   font-weight: 700;
   border: 1px solid #2f80ed;
   background: #fff; /* fallback for old browsers */
+  position: absolute;
+  bottom: 10px;
 }
 
 .product .item:hover > .info a .button {
   color: white;
   background: #2f80ed; /* fallback for old browsers */
+}
+
+#breadcrumb {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #e6e6e6;
+  background-color: #f7f7f7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#contentBradCrumb {
+  position: relative;
+  max-width: 1366px;
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#contentBradCrumb span,
+#contentBradCrumb i {
+  font-size: 13px;
+  margin: 0 5px;
+  color: gray;
+}
+
+#contentBradCrumb i {
+  font-size: 22px;
+}
+
+.qtyControls {
+  display: flex;
+  justify-content: center;
+}
+
+.qtyText {
+  width: 100%;
+}
+
+#minus {
+  order: 1;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #afafaf;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  cursor: pointer;
+}
+#qty {
+  order: 2;
+  width: 50px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  text-align: center;
+}
+#plus {
+  order: 3;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #afafaf;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  cursor: pointer;
 }
