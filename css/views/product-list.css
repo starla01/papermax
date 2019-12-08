@@ -90,6 +90,7 @@
   border-radius: 0%;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 30px 0 0 0;
 }
 
 .product .item .info {
@@ -129,6 +130,11 @@
   font-size: 22px;
 }
 
+.product .item .favorite span {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
 .product .item .favorite {
   position: absolute;
   top: 0;
@@ -136,10 +142,13 @@
   padding: 10px;
   z-index: 3;
   color: gray;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .product .item .favorite i:hover {
-  color: red;
+  color: #2f80ed;
 }
 
 .product .item .info a .button {
@@ -192,6 +201,8 @@
 }
 
 .qtyControls {
+  height: 28px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
