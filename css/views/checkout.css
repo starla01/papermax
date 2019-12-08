@@ -38,6 +38,10 @@
   overflow: hidden;
 }
 
+.addressItem.active {
+  border: 2px solid #2f80ed;
+}
+
 .addresTypeTitle {
   white-space: nowrap;
   text-overflow: ellipsis;
