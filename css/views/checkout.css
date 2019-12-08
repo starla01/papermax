@@ -1,0 +1,69 @@
+#card-glass {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#card-template {
+  width: 430px;
+  height: 240px;
+  border-radius: 6px;
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 134, 255, 1) 100%
+  );
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+#numberCard {
+  padding: 25px 0;
+}
+
+.addressItem {
+  width: 180px;
+  height: 260px;
+  border-radius: 6px;
+  border: 1px dotted gray;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.addresTypeTitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.addressItem:hover {
+  border: 1px solid #2f80ed;
+}
+
+.nameType {
+  color: #2f80ed;
+}
+
+.mailType {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  color: #333;
+}
+.addressType {
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+}
