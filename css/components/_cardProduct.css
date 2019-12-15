@@ -10,9 +10,7 @@
   border: 1px solid white;
 }
 .card_product:hover {
-  box-shadow: 0 3px 6px rgba(242, 153, 74, 0.16),
-    0 3px 6px rgba(242, 153, 74, 0.879);
-  border: 1px solid #f2994a;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.16);
 }
 
 .slick-list.draggable {

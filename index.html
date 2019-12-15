@@ -17,72 +17,87 @@
   <link rel="stylesheet" href="./css/components/_boxBanners.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="./assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet">
   <link href="./assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/views/productBox_carrusel.css">
 
+  <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="css/views/home.css">
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="headerPaper contain">
-    <div class="row header-row">
-      <div class="header-menu">
-        <label for="btn-menu" id="labelMenu" class="header-menu__label"><img src="./icons/menu.png"
-            alt="menuHamburguesa" id="imgMenu" /></label>
-
-        <span class="header-menu__txt">DEPARTAMENTOS</span>
-        <div id="navBarHeader">
+  <header id="new-header">
+    <div id="logoPaper" class="containerNav">
+      <img src="./images/logo.png" width="160">
+    </div>
+    <div id="search" class="containerNav">
+      <div id="triggerDeptos">
+        <i class="material-icons">
+          menu
+        </i>
+        <span id="deptosText">Departamentos</span>
+        <div id="menuContainer">
           <div id="deptos">
             <div class="depto">
               <div>Oficina</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
               <div class="family" id="oficina">
                 <ul>
-                  <li><a href="/">BROCHE PARA ARCHIVO</a></li>
-                  <li><a href="/">BROCHES LATONADOS</a></li>
-                  <li><a href="/">CLIPS</a></li>
-                  <li><a href="/">AGARRAPAPELES BULL DOG</a></li>
-                  <li><a href="/">AGARRAPAPELES TIPO PINZA</a></li>
-                  <li><a href="/">GRAPAS</a></li>
-                  <li><a href="/">CARPETA TIPO PRESSBOARD</a></li>
-                  <li><a href="/">CARPETAS DE VINIL "O"</a></li>
-                  <li><a href="/">CARPETAS DE VINIL "D"</a></li>
-                  <li><a href="/">GUIAS PARA ARCHIVO</a></li>
-                  <li><a href="/">PROTECTORES, SEPARADORES E INDICES</a></li>
-                  <li><a href="/">TABLAS AGARRAPAPELES</a></li>
-                  <li><a href="/">CHINCHES</a></li>
+                  <li><a href="/">Broche para archivo</a></li>
+                  <li><a href="/">Broches latonados</a></li>
+                  <li><a href="/">Clips</a></li>
+                  <li><a href="/">Agarrapapeles Bull Dog</a></li>
+                  <li><a href="/">Agarrapapeles tipo pinza</a></li>
+                  <li><a href="/">Grapas</a></li>
+                  <li><a href="/">Carpeta tipo pressboard</a></li>
+                  <li><a href="/">Carpetas de vinil "O"</a></li>
+                  <li><a href="/">Carpetas de vinil "D"</a></li>
+                  <li><a href="/">Guias para archivo</a></li>
+                  <li><a href="/">Protectores, separadores e indices</a></li>
+                  <li><a href="/">Tablas agarrapapeles</a></li>
+                  <li><a href="/">Chinches</a></li>
                 </ul>
               </div>
             </div>
             <div class="depto">
               <div>Escritura</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
               <div class="family" id="escritura">
                 <ul>
-                  <li><a href="/">MARCADOR PERMANENTE BARRIL DE ALUMINIO</a></li>
-                  <li><a href="/">MARCADOR PERMANENTE BARRIL DE PLASTICO</a></li>
-                  <li><a href="/">MARCADOR PERMANENTE PUNTO FINO</a></li>
-                  <li><a href="/">MARCADOR TIZAPEN BARRIL DE ALUMINIO</a></li>
-                  <li><a href="/">MARCADOR TIZAPEN BARRIL DE PLASTICO</a></li>
-                  <li><a href="/">RESALTADOR FLOURESCENTE</a></li>
-                  <li><a href="/">RESALTADOR FLUORESCENTE FINO</a></li>
-                  <li><a href="/">MARCATEXTOS</a></li>
-                  <li><a href="/">MARCADOR BASE AGUA</a></li>
-                  <li><a href="/">PLUMINES</a></li>
-                  <li><a href="/">MARCADORES DE CERA</a></li>
-                  <li><a href="/">CRAYONES</a></li>
-                  <li><a href="/">LAPICES</a></li>
-                  <li><a href="/">BOLIGRAFO</a></li>
+                  <li><a href="/">Marcador permanente barril de alimunio</a></li>
+                  <li><a href="/">Marcador permanente barril de plastico</a></li>
+                  <li><a href="/">Marcador permanente barril punto fino</a></li>
+                  <li><a href="/">Marcador Tizapen barril de alimunio</a></li>
+                  <li><a href="/">Marcador Tizapen barril de plastico</a></li>
+                  <li><a href="/">Resaltador Flouresente</a></li>
+                  <li><a href="/">Resaltador Flouresente fino</a></li>
+                  <li><a href="/">Marcatextos</a></li>
+                  <li><a href="/">Marcador base de agua</a></li>
+                  <li><a href="/">Plumines</a></li>
+                  <li><a href="/">Marcadores de cera</a></li>
+                  <li><a href="/">Crayones</a></li>
+                  <li><a href="/">Lapices</a></li>
+                  <li><a href="/">Bolígrafo</a></li>
                 </ul>
               </div>
             </div>
             <div class="depto">
               <div>Escolar</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
               <div class="family" id="escolar">
                 <ul>
                   <li><a href="/">Gises</a></li>
                   <li><a href="/">Acuarelas</a></li>
-                  <li><a href="/">COLORES PARA CARTEL</a></li>
-                  <li><a href="/">PINTURA ACRILICA</a></li>
+                  <li><a href="/">Colores para cartel</a></li>
+                  <li><a href="/">Pintura acrilica</a></li>
                   <li><a href="/">Plastilina</a></li>
                   <li><a href="/">Gomas</a></li>
                   <li><a href="/">Tijeras</a></li>
@@ -104,171 +119,187 @@
           </div>
         </div>
       </div>
-      <div class="header-logo">
-        <img class="header-logo__img" src="./images/logo.png" alt="logo" />
-      </div>
-      <div class="header-form" id="form">
-        <input type="search" class="header-form__input" id="inputSearch"
-          placeholder="Busca por producto, marca o departamento" />
+      <div id="triggerSearch">
+        <input type="text" id="searchInput" placeholder="Busca por producto o marca" autocomplete="off" />
+        <i class="material-icons closeIcon" id="closeIconSearch">
+          close
+        </i>
+        <i class="material-icons" id="iconSearch">
+          search
+        </i>
         <div id="suggest">
           <ul>
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Papel crepe</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
           </ul>
         </div>
-        <button class="header-form__btn" id="btnSearch">
-          <img src="./icons/search.png" alt="search" id="imgSearch" />
-        </button>
       </div>
-      <div class="header-botones">
-        <div class="header-botones__cuenta">
-          <img src="./icons/user.png" alt="user" class="user" />
-          <span id="hello">Hola, </span><span id="name">Fernando</span>
-          <div id="myAccount">
-            <span id="triangle"></span>
-            <div class="menuLogin" id="withLogin">
-              <ul>
-                <li><a href="/registro">
-                    Hola, Fernando</a></li>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      favorite
-                    </i>Mis favoritos</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      shopping_basket
-                    </i>Mis pedidos</a></li>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      dashboard
-                    </i>Mi cuenta</a></li>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      g_translate
-                    </i>Cambiar idioma</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      input
-                    </i> Cerrar sesión</a></li>
-              </ul>
-            </div>
-            <div class="menuLogin" id="withOutLogin">
-              <ul>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      account_box
-                    </i>Registro</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      assignment_ind
-                    </i>Iniciar sesión</a></li>
-              </ul>
-            </div>
+    </div>
+    <div id="accountNav" class="containerNav">
+      <div id="capsuleAccount">
+        <i class="material-icons">
+          account_circle
+        </i>
+        &nbsp;
+        <span id="nameAccount"><b>Hola</b>, Fernando</span>
+        <div id="myAccount">
+          <span id="triangle"></span>
+          <div class="menuLogin" id="withLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    favorite
+                  </i>Mis favoritos</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    shopping_basket
+                  </i>Mis pedidos</a></li>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    dashboard
+                  </i>Mi cuenta</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    input
+                  </i> Cerrar sesión</a></li>
+            </ul>
+          </div>
+          <div class="menuLogin" id="withOutLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    account_box
+                  </i>Registro</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    assignment_ind
+                  </i>Iniciar sesión</a></li>
+            </ul>
           </div>
         </div>
-        <div class="centro"></div>
-        <div class="header-botones__tienda">
-          <img src="./icons/shop.png" alt="shop" class="shop" />
-          <div id="list_cart">
-            <h3 id="titleSmartCart">Mi Carrito</h3>
-            <div id="listItems">
-              <ul>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
-                  <span class="price">$299.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
-                  <span class="price">$19.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
-                  <span class="price">$34.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
-                  </div>
-                  <span class="price">$699.90</span>
-                </li>
-              </ul>
+      </div>
+      <div id="capsuleCart">
+        <div id="counterItems">99</div>
+        <i class="material-icons">
+          shopping_cart
+        </i>
+        <div id="list_cart">
+          <h3 id="titleSmartCart">Mi Carrito</h3>
+          <div id="listItems">
+            <ul>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
+                <span class="price">$299.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
+                <span class="price">$19.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
+                <span class="price">$34.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
+                </div>
+                <span class="price">$699.90</span>
+              </li>
+            </ul>
+          </div>
+          <div id="totalCart">
+            <div id="subTotal">
+              <span>Subtotal</span>
+              <span><b>$1,078.00</b></span>
             </div>
-            <div id="totalCart">
-              <div id="subTotal">
-                <span>Subtotal</span>
-                <span><b>$1,078.00</b></span>
-              </div>
-              <div id="viewCart">
-                Ir a Carrito
-              </div>
+            <div id="viewCart">
+              Ir a Carrito
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
 
+
+  </header>
 
   <!-- MAIN -->
   <div class="main-home contain">
     <div class="contain-center">
-        <!--Main Banner-->
-        <div class="js-slick-carousel u-slick"
-          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
-          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
-          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4">
-          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
-            <div class="space-5">
-            </div>
-          </div>
-          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
-            <div class="space-5">
-            </div>
-          </div>
-          <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
-            <div class="space-5">
-            </div>
+      <!--Main Banner-->
+      <div class="js-slick-carousel u-slick"
+        data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+        data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+        data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4">
+        <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+          <div class="space-5">
           </div>
         </div>
-        <!--Main Banner-->
-
-        <div style="text-align: center; margin: 10px 0 0 0;">
-          <h1><b>Productos Recomendados</b></h1>
+        <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+          <div class="space-5">
+          </div>
         </div>
+        <div class="js-slide bg-img-hero-center" style="background-image: url(images/slider.png);">
+          <div class="space-5">
+          </div>
+        </div>
+      </div>
+      <!--Main Banner-->
+
+      <div style="text-align: center; margin: 10px 0 0 0;">
+        <h1><b>Productos Recomendados</b></h1>
+      </div>
 
 
-        <!--Carrusel products recomendados-->
-        <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
-          data-variable-width="true" data-infinite="true"
-          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
-          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
-          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
-          data-responsive='[{
+      <!--Carrusel products recomendados-->
+      <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+        data-variable-width="true" data-infinite="true"
+        data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+        data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+        data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+        data-responsive='[{
                  "breakpoint": 992,
                  "settings": {
                    "slidesToShow": 2
@@ -284,247 +315,287 @@
                    "slidesToShow": 1
                  }
                }]'>
-          <div class="js-slide card_product">
-            <div class="space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product">
-                  $67.50
-                </div>
-                <div class="buy_button">
-                  <i class="material-icons">
-                    add_shopping_cart
-                  </i>
-                </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
               </div>
             </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
               </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
+              <a>
+                <div class="button">
+                  Añadir a carrito
                 </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <!--Carrusel products recomendados-->
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Carrusel products recomendados-->
 
-        <!--BoxBanners line 1-->
-        <div class="box-banners">
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box1.png" />
-            </a>
-          </div>
-          <div class="banner_large">
-            <a href="/lista">
-              <img src="images/box2.png" />
-            </a>
-          </div>
+      <!--BoxBanners line 1-->
+      <div class="box-banners">
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box1.png" />
+          </a>
         </div>
-        <!--BoxBanners line 1-->
+        <div class="banner_large">
+          <a href="/lista">
+            <img src="images/box2.png" />
+          </a>
+        </div>
+      </div>
+      <!--BoxBanners line 1-->
 
-        <!--BoxBanners line 2-->
-        <div class="box-banners">
-          <div class="banner_large">
-            <a href="/lista">
-              <img src="images/box3.png" />
-            </a>
-          </div>
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box4.png" />
-            </a>
-          </div>
+      <!--BoxBanners line 2-->
+      <div class="box-banners">
+        <div class="banner_large">
+          <a href="/lista">
+            <img src="images/box3.png" />
+          </a>
         </div>
-        <!--BoxBanners line 2-->
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box4.png" />
+          </a>
+        </div>
+      </div>
+      <!--BoxBanners line 2-->
 
-        <div style="text-align: center; margin: 10px 0 0 0;">
-          <h1><b>Productos más buscados</b></h1>
-        </div>
-        <!--Carrusel products mas buscados-->
-        <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
-          data-variable-width="true" data-infinite="true"
-          data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
-          data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
-          data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
-          data-responsive='[{
+      <div style="text-align: center; margin: 10px 0 0 0;">
+        <h1><b>Productos más buscados</b></h1>
+      </div>
+      <!--Carrusel products mas buscados-->
+      <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+        data-variable-width="true" data-infinite="true"
+        data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+        data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+        data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+        data-responsive='[{
                    "breakpoint": 992,
                    "settings": {
                      "slidesToShow": 2
@@ -540,214 +611,186 @@
                      "slidesToShow": 1
                    }
                  }]'>
-          <div class="js-slide card_product">
-            <div class="space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product">
-                  $67.50
-                </div>
-                <div class="buy_button">
-                  <i class="material-icons">
-                    add_shopping_cart
-                  </i>
-                </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
               </div>
             </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
               </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
+              <a>
+                <div class="button">
+                  Añadir a carrito
                 </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="js-slide card_product">
-            <div class=" space-0">
-              <div class="data_product">
-                <div class="image_product">
-                  <a href="/detalle-de-producto">
-                    <img src="images/imgLg.png" width="170" />
-                  </a>
-                </div>
-                <div class="name_product">
-                  <a href="/detalle-de-producto">
-                    Lápices de colores Crayola 4012 con 12
-                  </a>
-                </div>
-                <div class="price_product promo">
-                  $57.50
-                </div>
-                <div class="last_price_product">
-                  $67.50
-                </div>
-                <a href="/cart">
-                  <div class="buy_button">
-                    <i class="material-icons">
-                      add_shopping_cart
-                    </i>
-                  </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <!--Carrusel products mas buscados-->
-        <br />
-          <!--Carrusel de marcas-->
-          <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
-            data-variable-width="true" data-infinite="true"
-            data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
-            data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
-            data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
-            data-responsive='[{
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_product">
+          <div class="item">
+            <div class="selectors favorite">
+              <span>comparar</span>
+              <i class="material-icons">
+                check_box_outline_blank
+              </i>
+              <i class="material-icons">
+                favorite_border
+              </i>
+            </div>
+            <div class="top">
+              <div class="image">
+                <img src="./images/prod1.png" />
+              </div>
+            </div>
+            <div class="info">
+              <p class="name">Lapices bicolor en rojo y azul marino largos color peps</p>
+              <p class="brand">Crayola</p>
+              <p class="lastPrice">$349.00</p>
+              <p class="Price">$299.00</p>
+              <div class="qtyControls">
+                <i class="material-icons minusCtrl"> remove </i>
+                <input type="text" value="1" class="qtyText" />
+                <i class="material-icons plusCtrl"> add </i>
+              </div>
+              <a>
+                <div class="button">
+                  Añadir a carrito
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Carrusel products mas buscados-->
+      <br />
+      <!--Carrusel de marcas-->
+      <div class="js-slick-carousel u-slick u-slick--gutters-1" data-slides-show="3" data-slides-scroll="1"
+        data-variable-width="true" data-infinite="true"
+        data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+        data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+        data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+        data-responsive='[{
                                      "breakpoint": 992,
                                      "settings": {
                                        "slidesToShow": 2
@@ -763,88 +806,88 @@
                                        "slidesToShow": 1
                                      }
                                    }]'>
-            <div class="js-slide card_brand">
-              <div class="space-0">
-                <div class="data_brand">
-                  <a href="/brand-laorusse">
-                    <img src="images/brand_laourusse.png" width="170" />
-                  </a>
-                </div>
-              </div>
+        <div class="js-slide card_brand">
+          <div class="space-0">
+            <div class="data_brand">
+              <a href="/brand-laorusse">
+                <img src="images/brand_laourusse.png" width="170" />
+              </a>
             </div>
-            <div class="js-slide card_brand">
-              <div class="space-0">
-                <div class="data_brand">
-                  <a href="/brand-baco">
-                    <img src="images/brand_baco.png" width="170" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="js-slide card_brand">
-              <div class="space-0">
-                <div class="data_brand">
-                  <a href="/brand-baco">
-                    <img src="images/brand_razor.png" width="170" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="js-slide card_brand">
-              <div class="space-0">
-                <div class="data_brand">
-                  <a href="/brand-laorusse">
-                    <img src="images/brand_laourusse.png" width="170" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="js-slide card_brand">
-              <div class="space-0">
-                <div class="data_brand">
-                  <a href="/brand-baco">
-                    <img src="images/brand_baco.png" width="170" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Carrusel de marcas-->
-          <br />
-        <!--BoxBanners line 4-->
-        <div class="box-banners">
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box_computo.png" />
-            </a>
-          </div>
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box_manualidades.png" />
-            </a>
-          </div>
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box_papeles.png" />
-            </a>
           </div>
         </div>
-        <!--BoxBanners line 4-->
+        <div class="js-slide card_brand">
+          <div class="space-0">
+            <div class="data_brand">
+              <a href="/brand-baco">
+                <img src="images/brand_baco.png" width="170" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_brand">
+          <div class="space-0">
+            <div class="data_brand">
+              <a href="/brand-baco">
+                <img src="images/brand_razor.png" width="170" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_brand">
+          <div class="space-0">
+            <div class="data_brand">
+              <a href="/brand-laorusse">
+                <img src="images/brand_laourusse.png" width="170" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-slide card_brand">
+          <div class="space-0">
+            <div class="data_brand">
+              <a href="/brand-baco">
+                <img src="images/brand_baco.png" width="170" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Carrusel de marcas-->
+      <br />
+      <!--BoxBanners line 4-->
+      <div class="box-banners">
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box_computo.png" />
+          </a>
+        </div>
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box_manualidades.png" />
+          </a>
+        </div>
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box_papeles.png" />
+          </a>
+        </div>
+      </div>
+      <!--BoxBanners line 4-->
 
-        <!--BoxBanners line 4-->
-        <div class="box-banners">
-          <div class="banner_small">
-            <a href="/lista">
-              <img src="images/box6.png" />
-            </a>
-          </div>
-          <div class="banner_large">
-            <a href="/lista">
-              <img src="images/box5.png" />
-            </a>
-          </div>
+      <!--BoxBanners line 4-->
+      <div class="box-banners">
+        <div class="banner_small">
+          <a href="/lista">
+            <img src="images/box6.png" />
+          </a>
         </div>
-        <!--BoxBanners line 4-->
+        <div class="banner_large">
+          <a href="/lista">
+            <img src="images/box5.png" />
+          </a>
+        </div>
+      </div>
+      <!--BoxBanners line 4-->
     </div>
 
 
@@ -933,6 +976,28 @@
 
   <!-- Libreria para sliders -->
   <!-- JS Global Compulsory -->
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="./assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.header.js"></script>
+  <script src="./assets/js/components/hs.unfold.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="./assets/js/components/hs.validation.js"></script>
+  <script src="./assets/js/components/hs.show-animation.js"></script>
+  <script src="./assets/js/components/hs.svg-injector.js"></script>
+  <script src="./assets/js/components/hs.go-to.js"></script>
 
   <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
@@ -945,15 +1010,42 @@
   <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="./js/scripts.js"></script>
 
-    <script>
-      $(document).on('ready', function () {
-        // initialization of forms
-        $.HSCore.components.HSFocusState.init();
-        $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-      });
-    </script>
+  <!-- JS Implementing Plugins -->
+
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+    });
+  </script>
   <!-- JS Front -->
 
+  <script>
+    $("#suggest ul li").on("click", function () {
+      alert("click en suggest")
+    })
+
+    $("#searchInput").focus(function () {
+      $("#suggest").css("display", "block");
+    })
+
+    $("#suggest").mouseleave(function () {
+      $("#suggest").css("display", "none");
+    });
+
+    $("#triggerSearch").on("click", function () {
+      $("#search").addClass("active")
+    })
+
+    $("#searchInput").blur(function () {
+      $("#search").removeClass("active")
+    })
+
+    $("#closeIconSearch").on("click", function () {
+      $("#search").removeClass("active")
+    })
+  </script>
 </body>
 
 </html>
