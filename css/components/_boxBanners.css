@@ -22,3 +22,15 @@
 .banner_large img {
   width: 100%;
 }
+
+@media screen and (max-width: 580px) {
+  .box-banners {
+    display: block;
+  }
+  .banner_small {
+    width: 100% !important;
+  }
+  .banner_large {
+    width: 100% !important;
+  }
+}

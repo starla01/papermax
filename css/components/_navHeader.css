@@ -1,147 +1,501 @@
-#navBarHeader {
-  left: 0;
-  top: 40px;
-  z-index: 2;
-  width: 920px;
-  position: absolute;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  display: none;
+#new-header {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#search {
+  width: 40%;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+#accountNav {
+  display: flex;
 }
 
-#navBarHeader #deptos {
-  width: 120px;
-  height: 100%;
-  background-color: aliceblue;
-  border-radius: 20px 0 0 20px;
-  padding: 17px 0;
-  box-sizing: border-box;
-}
-
-#navBarHeader #deptos .depto {
-  padding: 10px 10px;
-  text-align: left;
-  box-sizing: border-box;
+#triggerDeptos {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 0 0 30px;
+  padding: 0 10px;
   font-size: 14px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+#triggerDeptos i {
+  margin-right: 8px;
 }
 
-#navBarHeader #deptos .depto:hover {
+#triggerSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  padding: 0 10px;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+}
+
+#iconSearch {
+  position: absolute;
+  right: 0;
   background-color: #2f80ed;
   color: white;
+  border-radius: 0 30px 30px 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#navBarHeader #deptos .depto:hover > .family {
+#search.active > #triggerSearch .closeIcon {
   display: block;
 }
 
-#navBarHeader #deptos .depto .family {
+#triggerSearch .closeIcon {
   position: absolute;
-  left: 120px;
-  height: 100%;
-  top: 0;
-  border-radius: 0 20px 20px 0;
+  right: 50px;
+  z-index: 4;
   display: none;
-  width: calc(100% - 120px);
-  color: gray;
-  overflow: hidden;
 }
 
-#navBarHeader #deptos .depto .family ul {
+#searchInput {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 30px 30px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#capsuleAccount {
+  width: 170px;
+  height: 40px;
+  background-color: #2f80ed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+#capsuleAccount:hover > #myAccount {
+  display: block;
+}
+
+#capsuleAccount span {
+  font-size: 13px;
+}
+
+#capsuleCart {
+  width: 50px;
+  height: 40px;
+  background-color: #f2994a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  border-left: 1px solid white;
+  position: relative;
+}
+
+#counterItems {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #2f80ed;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myAccount {
+  width: 180px;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  right: -48px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3;
+  display: none;
+}
+#myAccount .menuLogin {
+  border: 0px solid white;
+}
+#myAccount .menuLogin ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  text-transform: lowercase;
+}
+#myAccount .menuLogin ul li:hover {
+  background-color: #f3f3f3;
+}
+#myAccount .menuLogin ul li {
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f4f6f9;
+}
+.headerPaper
+  .header-row
+  .header-botones
+  #myAccount
+  .menuLogin
+  ul
+  li:last-child {
+  border-bottom: 0;
+}
+#myAccount .menuLogin ul li a {
+  color: #393939;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+#myAccount .menuLogin ul li a i {
+  color: #2f80ed;
+  margin-right: 10px;
+}
+#myAccount #triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 7px 10px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: -7px;
+  left: 45%;
 }
 
-#navBarHeader #deptos .depto .family ul li {
-  line-height: 20px;
+#suggest {
+  display: none;
+  width: 150%;
+  height: auto;
+  border-radius: 0 6px 6px 6px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3;
 }
 
-#navBarHeader #deptos .depto .family ul li a {
-  color: #333 !important;
+#searchInput:focus + #suggest {
+  display: block;
+}
+
+#suggest ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#suggest ul li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 12px 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+#suggest ul li i {
+  font-size: 18px;
+  margin-right: 5px;
+  display: none;
+}
+#suggest ul {
+  font-size: 14px;
+  color: #343434;
   text-decoration: none;
 }
-
-#navBarHeader #deptos .depto .family ul li a:hover {
-  text-decoration: underline;
+#suggest ul li:last-child {
+  border-radius: 0 0 6px 6px;
 }
 
-#navBarHeader #deptos .depto .family#escritura {
-  background-image: url(../../images/escritorio.jpg);
-}
-#navBarHeader #deptos .depto .family#escolar {
-  background-image: url(../../images/escolar.jpg);
-}
-#navBarHeader #deptos .depto .family#oficina {
-  background-image: url(../../images/oficina.jpg);
+#suggest ul li:hover {
+  background-color: #f2f2f2;
+  color: #2f80ed;
 }
 
-@media screen and (max-width: 767px) {
-  .headerPaper .header-row .header-form .header-form__input {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+.texts .text {
+  margin: 0;
+  color: #333333;
+}
+.texts .subText {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 300;
+}
+#suggest ul li:hover > i {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  #deptosText {
+    display: none;
+  }
+}
+
+#capsuleCart:hover > #list_cart {
+  transition: 0.4s;
+  right: 0;
+}
+
+#list_cart {
+  width: 260px;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  right: -260px;
+  color: black;
+  top: 0;
+  z-index: 4;
+}
+
+#list_cart #listItems {
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+}
+
+#list_cart #titleSmartCart {
+  padding: 0 15px;
+}
+
+#list_cart #listItems ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#list_cart #listItems ul li:hover {
+  background-color: #f4f6f9;
+  cursor: pointer;
+}
+
+#list_cart #listItems ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 5px;
+}
+
+#list_cart #listItems ul li .name {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+#list_cart #listItems ul li .name img {
+  width: 40px;
+}
+
+#list_cart #listItems ul li .name span {
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+#list_cart #listItems ul li .price {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: #2f80ed;
+  font-weight: 600;
+}
+
+#list_cart #totalCart {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px dotted #888888;
+  width: 100%;
+  padding: 10px 6px 10px 6px;
+  box-sizing: border-box;
+}
+
+#list_cart #totalCart #subTotal {
+  color: #3e3e3e;
+  display: flex;
+  justify-content: space-between;
+}
+
+#list_cart #totalCart #viewCart:hover {
+  background-color: rgb(90, 153, 235);
+}
+
+#list_cart #totalCart #viewCart {
+  background-color: #2f80ed;
+  transition: 0.3s;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px 0;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#menuContainer {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: white;
+  left: 0;
+  top: 40px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3;
+}
+#deptos .depto {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+#deptos .depto:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#deptos .depto:first-child {
+  border-top: 0;
+}
+#deptos .depto:hover > .family {
+  display: block;
+}
+
+.family {
+  display: none;
+  background: white;
+  left: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  width: 300px;
+  border-radius: 0 6px 6px 6px;
+  border-left: 2px solid rgb(90, 153, 235);
+}
+
+#triggerDeptos:hover > #menuContainer {
+  display: block;
+}
+.family ul {
+  margin: 0;
+  padding: 0;
+}
+.family ul li {
+  list-style-type: none;
+  padding: 7px 0 7px 10px;
+}
+.family ul li:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.family ul li:hover > a {
+  color: #2f80ed;
+}
+.family ul li a {
+  color: gray;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 770px) {
+  #closeIconSearch {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #nameAccount {
+    display: none;
+  }
+  #capsuleAccount {
+    width: 55px;
+  }
+  #triggerSearch {
+    width: 40px;
+  }
+
+  #logoPaper img {
+    width: 80px;
+  }
+  #logoPaper {
+    order: 2;
+  }
+  #search {
+    width: 100px;
+    order: 1;
+  }
+
+  .containerNav.active #triggerSearch {
+    width: 95% !important;
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  #accountNav {
+    order: 3;
+  }
+
+  #suggest {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 62px;
+  }
+
+  #list_cart {
+    width: 100%;
+    right: -100%;
+    top: 63px;
+  }
+
+  #myAccount {
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+  }
+
+  #menuContainer {
     position: fixed;
     left: 0;
     top: 60px;
-    height: 40px;
-    width: 100%;
-    z-index: 4;
+    width: 150px;
+    height: 100%;
+    border-radius: 0;
   }
-}
 
-@media screen and (max-width: 1140px) {
-  #navBarHeader {
-    top: 92px;
+  .depto .family {
     width: 100%;
     position: fixed;
-    height: auto;
-    border-radius: 0;
+    top: 60px;
+    left: 150px;
+    height: 100%;
   }
-}
-
-@media screen and (max-width: 680px) {
-  #navBarHeader {
-    top: 52px;
-    width: 100%;
-    position: fixed;
-    height: auto;
-    border-radius: 0;
-  }
-  #navBarHeader #deptos {
-    border-radius: 0;
-  }
-  #navBarHeader #deptos .depto .family {
-    border-radius: 0;
-  }
-  .u-header__banner {
-    display: none !important;
-  }
-  .row.u-header__mega-menu-wrapper {
-    height: 65%;
-    overflow: scroll;
-  }
-}
-
-#top-header {
-  background-color: rgba(0, 0, 0, 0.05);
-  height: 30px;
-}
-
-#top-header #containerTopHeader {
-  max-width: 1360px;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#top-header #containerTopHeader .elemTopHeader {
-  margin: 0 10px;
-}
-
-#top-header #containerTopHeader .elemTopHeader .topHeaderTexts {
-  font-size: 12px;
-  color: gray;
-}
-
-.badge {
-  z-index: 1 !important;
 }
