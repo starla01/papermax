@@ -1,0 +1,277 @@
+#account-section {
+  height: auto;
+  width: 1366px;
+  display: flex;
+  flex: 1 auto;
+  justify-content: space-around;
+}
+
+#nav-account {
+  width: 260px;
+  min-width: 260px;
+  height: 100%;
+  position: relative;
+  padding: 20px 0 0 0;
+}
+
+#nav-account ul,
+#nav-account ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-account ul li {
+  border-top: 1px solid rgb(225, 225, 225);
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4f4f4f;
+  cursor: pointer;
+  border-right: 1px solid rgb(225, 225, 225);
+  border-left: 1px solid rgb(225, 225, 225);
+}
+
+#nav-account ul li:last-child {
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+#nav-account ul li:hover {
+  background-color: #377dff;
+  color: white;
+}
+
+#nav-account ul li span.names-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nav-account ul li .names-nav .text-nav {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+#nav-account ul li .names-nav i {
+  font-size: 30px;
+}
+
+#content-account {
+  width: 100%;
+  padding: 20px 50px 80px 80px;
+  box-sizing: border-box;
+}
+
+#user-profile {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+#back-profile {
+  width: 100%;
+  height: 120px;
+  border-radius: 6px 6px 0 0;
+  background-image: url(https://www.tendencias21.net/photo/art/grande/16915302-21520842.jpg?v=1504441206);
+}
+
+#photo-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #146c53;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -60px;
+  border: 5px solid white;
+  text-align: center;
+  display: flex;
+  color: white;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#name-profile {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.profile-field {
+  padding: 5px 0;
+}
+
+.profile-field .profile-title {
+  color: gray;
+  font-weight: 600;
+  margin: 0;
+  font-size: 13px;
+}
+
+.profile-field .profile-text {
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#bottom-controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-button {
+  width: 130px;
+  border-radius: 30px;
+  text-align: center;
+  color: #2f80ed;
+  font-weight: 700;
+  border: 1px solid #2f80ed;
+  background: #fff; /* fallback for old browsers */
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button:hover {
+  background-color: #2f80ed;
+  color: white;
+}
+
+#card-glass {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#card-template {
+  width: 430px;
+  height: 240px;
+  border-radius: 6px;
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 134, 255, 1) 100%
+  );
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+#numberCard {
+  padding: 25px 0;
+}
+
+.addressItem {
+  width: 200px;
+  height: 300px;
+  border-radius: 6px;
+  border: 1px dotted gray;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.addressItem.active {
+  border: 2px solid #2f80ed;
+}
+
+.addresTypeTitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  font-size: 22px;
+}
+
+.addressItem:hover {
+  border: 1px solid #2f80ed;
+}
+
+.nameType {
+  color: #2f80ed;
+}
+
+.mailType {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  color: #333;
+}
+.addressType {
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+}
+
+.text-center button {
+  font-size: 12px !important;
+}
+
+.modeAddress {
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+}
+.modeAddress i {
+  transform: rotate(45deg);
+  font-size: 80px;
+  color: #333;
+}
+
+.moreAddressText {
+  text-align: center;
+  color: #333;
+}
+
+.material-icons.editIcon {
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  font-size: 22px;
+  color: #333;
+}
+
+.material-icons.editIcon:hover {
+  color: #2f80ed;
+}
+
+.order-content {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 6px 6px 0 0;
+  min-height: 50px;
+  margin: 10px 0;
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}

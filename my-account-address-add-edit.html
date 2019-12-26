@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Mi cuenta - Mis direcciones</title>
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/components/_navHeader.css" />
+  <link rel="stylesheet" href="./css/components/_cardProduct.css" />
+  <link rel="stylesheet" href="./css/components/_boxBanners.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/views/productBox_carrusel.css">
+
+  <link rel="stylesheet" href="./assets/vendor/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+
+  <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="css/views/myAccount.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="new-header">
+    <div id="logoPaper" class="containerNav">
+      <img src="./images/logo.png" width="160">
+    </div>
+    <div id="search" class="containerNav">
+      <div id="triggerDeptos">
+        <i class="material-icons">
+          menu
+        </i>
+        <span id="deptosText">Departamentos</span>
+        <div id="menuContainer">
+          <div id="deptos">
+            <div class="depto">
+              <div>Oficina</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="oficina">
+                <ul>
+                  <li><a href="/">Broche para archivo</a></li>
+                  <li><a href="/">Broches latonados</a></li>
+                  <li><a href="/">Clips</a></li>
+                  <li><a href="/">Agarrapapeles Bull Dog</a></li>
+                  <li><a href="/">Agarrapapeles tipo pinza</a></li>
+                  <li><a href="/">Grapas</a></li>
+                  <li><a href="/">Carpeta tipo pressboard</a></li>
+                  <li><a href="/">Carpetas de vinil "O"</a></li>
+                  <li><a href="/">Carpetas de vinil "D"</a></li>
+                  <li><a href="/">Guias para archivo</a></li>
+                  <li><a href="/">Protectores, separadores e indices</a></li>
+                  <li><a href="/">Tablas agarrapapeles</a></li>
+                  <li><a href="/">Chinches</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <div>Escritura</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escritura">
+                <ul>
+                  <li><a href="/">Marcador permanente barril de alimunio</a></li>
+                  <li><a href="/">Marcador permanente barril de plastico</a></li>
+                  <li><a href="/">Marcador permanente barril punto fino</a></li>
+                  <li><a href="/">Marcador Tizapen barril de alimunio</a></li>
+                  <li><a href="/">Marcador Tizapen barril de plastico</a></li>
+                  <li><a href="/">Resaltador Flouresente</a></li>
+                  <li><a href="/">Resaltador Flouresente fino</a></li>
+                  <li><a href="/">Marcatextos</a></li>
+                  <li><a href="/">Marcador base de agua</a></li>
+                  <li><a href="/">Plumines</a></li>
+                  <li><a href="/">Marcadores de cera</a></li>
+                  <li><a href="/">Crayones</a></li>
+                  <li><a href="/">Lapices</a></li>
+                  <li><a href="/">Bolígrafo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <div>Escolar</div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escolar">
+                <ul>
+                  <li><a href="/">Gises</a></li>
+                  <li><a href="/">Acuarelas</a></li>
+                  <li><a href="/">Colores para cartel</a></li>
+                  <li><a href="/">Pintura acrilica</a></li>
+                  <li><a href="/">Plastilina</a></li>
+                  <li><a href="/">Gomas</a></li>
+                  <li><a href="/">Tijeras</a></li>
+                  <li><a href="/">Cortadores</a></li>
+                  <li><a href="/">Abacos</a></li>
+                  <li><a href="/">Manguillo y plumilla</a></li>
+                  <li><a href="/">Compaces</a></li>
+                  <li><a href="/">Estuches geometricos</a></li>
+                  <li><a href="/">Equipos geometricos</a></li>
+                  <li><a href="/">Reglas</a></li>
+                  <li><a href="/">Reglas T</a></li>
+                  <li><a href="/">Transportadores</a></li>
+                  <li><a href="/">Transportadores 360</a></li>
+                  <li><a href="/">Escuadras</a></li>
+                  <li><a href="/">Escuadras profesionales</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="triggerSearch">
+        <input type="text" id="searchInput" placeholder="Busca por producto o marca" autocomplete="off" />
+        <i class="material-icons closeIcon" id="closeIconSearch">
+          close
+        </i>
+        <i class="material-icons" id="iconSearch">
+          search
+        </i>
+        <div id="suggest">
+          <ul>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="accountNav" class="containerNav">
+      <div id="capsuleAccount">
+        <i class="material-icons">
+          account_circle
+        </i>
+        &nbsp;
+        <span id="nameAccount"><b>Hola</b>, Fernando</span>
+        <div id="myAccount">
+          <span id="triangle"></span>
+          <div class="menuLogin" id="withLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    favorite
+                  </i>Mis favoritos</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    shopping_basket
+                  </i>Mis pedidos</a></li>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    dashboard
+                  </i>Mi cuenta</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    input
+                  </i> Cerrar sesión</a></li>
+            </ul>
+          </div>
+          <div class="menuLogin" id="withOutLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    account_box
+                  </i>Registro</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    assignment_ind
+                  </i>Iniciar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="capsuleCart">
+        <div id="counterItems">99</div>
+        <i class="material-icons">
+          shopping_cart
+        </i>
+        <div id="list_cart">
+          <h3 id="titleSmartCart">Mi Carrito</h3>
+          <div id="listItems">
+            <ul>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
+                <span class="price">$299.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
+                <span class="price">$19.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
+                <span class="price">$34.90</span>
+              </li>
+              <li>
+                <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
+                </div>
+                <span class="price">$699.90</span>
+              </li>
+            </ul>
+          </div>
+          <div id="totalCart">
+            <div id="subTotal">
+              <span>Subtotal</span>
+              <span><b>$1,078.00</b></span>
+            </div>
+            <div id="viewCart">
+              Ir a Carrito
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- MAIN -->
+  <div class="main-home contain">
+    <div class="contain-center">
+      <!-- MAIN -->
+      <div class="main-home contain">
+        <div class="contain-center">
+          <div id="account-section">
+            <div id="nav-account">
+
+              <div id="user-profile">
+                <div id="back-profile"></div>
+                <div id="photo-profile">F</div>
+                <div id="name-profile">Fernando Robles</div>
+              </div>
+
+              <ul>
+                <li>
+                  <span class="names-nav">
+                    <i class="material-icons">
+                      account_circle
+                    </i>
+                    <span class="text-nav">Mi perfil</span>
+                  </span>
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </li>
+                <li>
+                  <span class="names-nav">
+                    <i class="material-icons">
+                      map
+                    </i>
+                    <span class="text-nav">Mis direcciones</span>
+                  </span>
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </li>
+                <li>
+                  <span class="names-nav">
+                    <i class="material-icons">
+                      local_shipping
+                    </i>
+                    <span class="text-nav">
+                      Mis pedidos</span>
+                  </span>
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </li>
+
+              </ul>
+            </div>
+            <div id="content-account">
+              <h3>Mis direcciones</h3>
+
+              <!-- Address List -->
+              <div class="row">
+                <div class="addressItem">
+                  <h3 class="addresTypeTitle">Casa de Mama
+                    <a href="#addPaymentModal" data-modal-target="#addPaymentModal">
+                      <i class="material-icons editIcon">
+                        edit
+                      </i>
+                    </a>
+                  </h3>
+                  <p class="nameType">Guillermina Rivera</p>
+                  <p class="mailType">fernando.ro.r@gmail.comxxxxxxxxx</p>
+                  <p>Tel: 55 8110 2925</p>
+                  <p class="addressType">Calle 2a cerrada de Morelos No 11, Mz 3, Col Ejidos Tecamac, Edo. de Mexico,
+                    CP. 55748</p>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-wide transition-3d-hover mb-4">Entregar en esta
+                      dirección</button>
+                  </div>
+                </div>
+                <div class="addressItem">
+                  <h3 class="addresTypeTitle">Abuela <a href="#addPaymentModal" data-modal-target="#addPaymentModal">
+                      <i class="material-icons editIcon">
+                        edit
+                      </i>
+                    </a></h3>
+                  <p class="nameType">Fernando Robles R</p>
+                  <p class="mailType">fernando.ro.r@gmail.comxxxxxxxxx</p>
+                  <p>Tel: 55 8110 2925</p>
+                  <p class="addressType">Calle 2a cerrada de Morelos No 11, Mz 3, Col Ejidos Tecamac, Edo. de Mexico,
+                    CP. 55748</p>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-wide transition-3d-hover mb-4">Entregar en esta
+                      dirección</button>
+                  </div>
+                </div>
+
+                <a href="#addPaymentModal" data-modal-target="#addPaymentModal">
+                  <div class="addressItem">
+                    <div class="modeAddress">
+                      <i class="material-icons">
+                        close
+                      </i>
+                    </div>
+                    <p class="moreAddressText">Añadir una <br />Direccion nueva</p>
+                  </div>
+                </a>
+              </div>
+              <!-- End Address List -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Account Modal Window -->
+        <div id="addPaymentModal" class="js-modal-window u-modal-window" style="width: 480px;">
+          <div class="card border-0">
+            <!-- Header -->
+            <header class="card-header bg-light py-3 px-5">
+              <div class="row justify-content-between align-items-center no-gutters">
+                <div class="col-6">
+                  <h4 class="h6 mb-0">Agregar | Editar Dirección</h4>
+                </div>
+
+                <div class="col-6 text-right">
+                  <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+            </header>
+            <!-- End Header -->
+
+            <form class="js-validate">
+              <div class="card-body p-5">
+
+                <!-- Input Group -->
+                <div class="form-row align-items-center mb-3">
+                  <div class="col-4 text-right">
+                    <label id="amountLabelExample1" class="h6 small d-block text-uppercase mb-0">
+                      Nombre de la direccion
+                    </label>
+                  </div>
+                  <div class="col-8">
+                    <div class="js-form-message">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" name="nameAddress" required
+                          placeholder="Mi departamento" aria-label="Mi departamento"
+                          aria-describedby="amountLabelExample1" data-msg="Por favor escribe el nombre de tu dirección"
+                          data-error-class="u-has-error" data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="form-row align-items-center mb-3">
+                  <div class="col-4 text-right">
+                    <label id="cardNumberLabel" class="h6 small d-block text-uppercase mb-0">
+                      Nombre de quien recibé
+                    </label>
+                  </div>
+                  <div class="col-8">
+                    <div class="js-form-message">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" name="name" required placeholder="Nancy Botello"
+                          aria-label="Nancy Botello" aria-describedby="cardNumberLabel"
+                          data-msg="Pro favor introduce un nombre válido" data-error-class="u-has-error"
+                          data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="form-row align-items-center mb-3">
+                  <div class="col-4 text-right">
+                    <label id="cardholderNameLabel" class="h6 small d-block text-uppercase mb-0">
+                      Correo electrónico
+                    </label>
+                  </div>
+                  <div class="col-8">
+                    <div class="js-form-message">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" type="mail" name="cardholderName" required
+                          placeholder="correo@mail.com" aria-label="Cardholder name"
+                          aria-describedby="cardholderNameLabel"
+                          data-msg="Por favor introduce un correo electrónico válido" data-error-class="u-has-error"
+                          data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="form-row align-items-center mb-3">
+                  <div class="col-4 text-right">
+                    <label id="expiresLabel" class="h6 small d-block text-uppercase mb-0">
+                      Teléfono
+                    </label>
+                  </div>
+                  <div class="col-8">
+                    <div class="js-form-message">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" type="number" name="phone" required placeholder="(+52) 55 2233 9439"
+                          aria-label="(+52) 55 2233 9439" aria-describedby="expiresLabel"
+                          data-msg="Por favor introduce un numero telefonico válido." data-error-class="u-has-error"
+                          data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="form-row align-items-center mb-0">
+                  <div class="col-4 text-right">
+                    <label id="cvcLabel" class="h6 small d-block text-uppercase mb-0">
+                      <span class="fas fa-info-circle" data-toggle="tooltip" data-placement="left"
+                        title="Es indispensable coloques tu direccion completa ya que es donde nosotros entregaremos tus pedidos."></span>
+                      Dirección
+                    </label>
+                  </div>
+                  <div class="col-8">
+                    <div class="js-form-message">
+                      <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" name="address" required
+                          placeholder="Deleg. Cuahutemoc, Av del hueso, No 23"
+                          aria-label="Deleg. Cuahutemoc, Av del hueso, No 23" aria-describedby="address"
+                          data-msg="Pro favor intriduce tu dirección completa" data-error-class="u-has-error"
+                          data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+              </div>
+
+              <!-- Buttons -->
+              <div class="card-footer py-3 px-5">
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-sm btn-primary transition-3d-hover mr-1">Agregar
+                    dirección</button>
+                  <button type="submit" class="btn btn-sm btn-soft-secondary transition-3d-hover"
+                    onclick="Custombox.modal.close();">Cancelar</button>
+                </div>
+              </div>
+              <!-- End Buttons -->
+            </form>
+          </div>
+        </div>
+        <!-- End Account Modal Window -->
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="redesSociales">
+      <div class="red">
+        <a href="#">
+          <img src="./icons/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="./icons/Twitter.png" alt="Twitter" />
+        </a>
+        <a href="#">
+          <img src="./icons/Instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="contenedorContacto">
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Nosotros</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>¿Quiénes somos?</span>
+          </a>
+          <a href="#">
+            <span>Sucursales</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Atención a Clientes</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Preguntas Frecuentes</span>
+          </a>
+          <a href="#">
+            <span>Facturación Tiendas</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Términos y Condiciones</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Aviso de Privacidad</span>
+          </a>
+          <a href="#">
+            <span>Términos y Condiciones</span>
+          </a>
+          <a href="#">
+            <span>Métodos de pago</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Tienda en Línea</h4>
+        </div>
+        <div class="opcionesCont">
+          <span class="spanImage"><img src="./icons/phone.png" alt="phone" class="phone" /></span>
+          <span class="text">55-1234-5678</span>
+          <br />
+          <br />
+          <span><img src="./icons/mail.png" alt="mail" class="mail" /></span>
+          <span class="text mailText">enlinea@papermax.com.mx</span>
+        </div>
+      </div>
+    </div>
+    <div class="lineaFooter"></div>
+    <br />
+    <br />
+    <br />
+  </footer>
+
+  <!-- Libreria para sliders -->
+  <!-- JS Global Compulsory -->
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="./assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.header.js"></script>
+  <script src="./assets/js/components/hs.unfold.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="./assets/js/components/hs.validation.js"></script>
+  <script src="./assets/js/components/hs.show-animation.js"></script>
+  <script src="./assets/js/components/hs.svg-injector.js"></script>
+  <script src="./assets/js/components/hs.go-to.js"></script>
+
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="./assets/js/components/hs.slick-carousel.js"></script>
+
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
+  <!-- JS Implementing Plugins -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="./assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/components/hs.modal-window.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-subscribe-window', {
+        autonomous: true
+      });
+    });
+  </script>
+
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+    });
+  </script>
+  <!-- JS Front -->
+
+  <script>
+    $("#suggest ul li").on("click", function () {
+      alert("click en suggest")
+    })
+
+    $("#searchInput").focus(function () {
+      $("#suggest").css("display", "block");
+    })
+
+    $("#suggest").mouseleave(function () {
+      $("#suggest").css("display", "none");
+    });
+
+    $("#triggerSearch").on("click", function () {
+      $("#search").addClass("active")
+    })
+
+    $("#searchInput").blur(function () {
+      $("#search").removeClass("active")
+    })
+
+    $("#closeIconSearch").on("click", function () {
+      $("#search").removeClass("active")
+    })
+  </script>
+</body>
+
+</html>
