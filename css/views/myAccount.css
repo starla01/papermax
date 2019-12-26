@@ -260,6 +260,14 @@
   margin: 10px 0;
 }
 
+.order-content-detail {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 6px 6px 0 0;
+  min-height: 50px;
+  margin: 10px 0;
+}
+
 .order-head {
   display: flex;
   justify-content: space-between;
@@ -274,4 +282,31 @@
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
+}
+
+.small-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2f80ed;
+}
+
+.order-detail-section {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.section-detail {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.small-title i {
+  position: relative;
+  margin-right: 10px;
+  font-size: 29px;
+  top: 7px;
+}
+
+.nameProductDetail {
+  width: 30%;
 }
