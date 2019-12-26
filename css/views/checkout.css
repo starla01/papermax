@@ -71,3 +71,20 @@
   line-height: 16px;
   color: #333;
 }
+
+#payment-steps {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.step {
+  color: #333;
+  font-size: 14px;
+}
+
+.num-step {
+  font-size: 20px;
+  color: #2f80ed;
+  font-weight: 700;
+}
