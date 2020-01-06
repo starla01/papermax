@@ -5,28 +5,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Mi cuenta - Detalle de pedido</title>
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="./assets/css/theme.css">
+  <title>Carrito</title>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/icons.css" />
   <link rel="stylesheet" href="./css/animate.css" />
   <link rel="stylesheet" href="./css/components/_navHeader.css" />
-  <link rel="stylesheet" href="./css/components/_cardProduct.css" />
-  <link rel="stylesheet" href="./css/components/_boxBanners.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet">
-  <link href="./assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/views/productBox_carrusel.css">
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
 
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <!-- CSS Front Template -->
+
+  <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
-  <link rel="stylesheet" href="css/views/myAccount.css">
+
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="css/views/product-list.css">
+  <link rel="stylesheet" href="css/components/_top_nav_header.css">
+
+
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header id="new-header">
     <div id="logoPaper" class="containerNav">
@@ -320,140 +334,22 @@
     </div>
   </header>
 
-  <!-- MAIN -->
-  <div class="main-home contain">
-    <div class="contain-center">
-      <!-- MAIN -->
-      <div class="main-home contain">
-        <div class="contain-center">
-          <div id="account-section">
-            <div id="nav-account">
 
-              <div id="user-profile">
-                <div id="back-profile"></div>
-                <div id="photo-profile">F</div>
-                <div id="name-profile">Fernando Robles</div>
-              </div>
-
-              <ul>
-                <li>
-                  <span class="names-nav">
-                    <i class="material-icons">
-                      account_circle
-                    </i>
-                    <span class="text-nav">Mi perfil</span>
-                  </span>
-                  <i class="material-icons">
-                    keyboard_arrow_right
-                  </i>
-                </li>
-                <li>
-                  <span class="names-nav">
-                    <i class="material-icons">
-                      map
-                    </i>
-                    <span class="text-nav">Mis direcciones</span>
-                  </span>
-                  <i class="material-icons">
-                    keyboard_arrow_right
-                  </i>
-                </li>
-                <li>
-                  <span class="names-nav">
-                    <i class="material-icons">
-                      local_shipping
-                    </i>
-                    <span class="text-nav">
-                      Mis pedidos</span>
-                  </span>
-                  <i class="material-icons">
-                    keyboard_arrow_right
-                  </i>
-                </li>
-
-              </ul>
-            </div>
-            <div id="content-account">
-              <h3>Detalle de pedido - <span class="small-title">343432</span></h3>
-
-              <!-- Orders List -->
-              <div class="row">
-                <div class="order-content-detail">
-                  <div class="order-head">
-                    <div>
-                      Realizado el <b>21/12/2019</b> - Status: <b>Activo</b>
-                    </div>
-                    <div>
-                      Total <b>$1,780.00</b>
-                    </div>
-                  </div>
-                  <div class="order-detail-section">
-                    <div class="section-detail">
-                      <h3 class="small-title"><i class="material-icons">
-                          map
-                        </i>Dirección de envío</h3>
-                      <p>Calle 2a cerrada de Morelos No 11, Mz 3, Col Ejidos Tecamac, Edo. de Mexico, CP. 55748</p>
-                    </div>
-
-                    <div class="section-detail">
-                      <h3 class="small-title"><i class="material-icons">
-                          credit_card
-                        </i>Forma de pago</h3>
-                      <p>Tarjeta de crédito</p>
-                    </div>
-
-                    <div class="section-detail">
-                      <h3 class="small-title"><i class="material-icons">
-                          local_shipping
-                        </i>Tipo de entrega</h3>
-                      <p>Entrega a domicilio</p>
-                    </div>
-
-                    <div class="section-detail">
-                      <hr />
-                      <h3 class="small-title">El envío incluye:</h3>
-                    </div>
-
-                    <div class="order-detail">
-                      <div class="nameProductDetail">
-                        Cant. 2 Broches de oro
-                      </div>
-                      <div>
-                        A $890.00
-                      </div>
-                      <div>
-                        <img width="60"
-                          src="https://res.cloudinary.com/walmart-labs/image/upload/w_225,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00004549659648l.jpg" />
-                      </div>
-                    </div>
-                    <div class="order-detail">
-                      <div class="nameProductDetail">
-                        Cant. 40 clips
-                      </div>
-                      <div>
-                        A $890.00
-                      </div>
-                      <div>
-                        <img width="60"
-                          src="https://res.cloudinary.com/walmart-labs/image/upload/w_225,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00004549659648l.jpg" />
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <!-- End Orders List -->
-            </div>
-          </div>
-        </div>
-
-
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Empty Cart section -->
+    <div class="container space-1 space-md-2">
+      <div id="container-empty-cart">
+        <img src="images/empty-cart.png" alt="Carrito vacio" /> <br /><br /><br />
+        <a href="/">
+          <button type="button" class="btn btn-primary full">Seguir comprando</button>
+        </a>
       </div>
+
     </div>
-
-
-  </div>
+    <!-- End Empty Cart section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- FOOTER -->
   <footer>
@@ -536,77 +432,91 @@
     <br />
   </footer>
 
-  <!-- Libreria para sliders -->
+
   <!-- JS Global Compulsory -->
-  <!-- JS Global Compulsory -->
-  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../Site/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../Site/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../Site/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../Site/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <script src="./assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="./assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../Site/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../Site/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../Site/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../Site/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../Site/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../Site/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
   <!-- JS Front -->
-  <script src="./assets/js/hs.core.js"></script>
-  <script src="./assets/js/components/hs.header.js"></script>
-  <script src="./assets/js/components/hs.unfold.js"></script>
-  <script src="./assets/js/components/hs.focus-state.js"></script>
-  <script src="./assets/js/components/hs.malihu-scrollbar.js"></script>
-  <script src="./assets/js/components/hs.validation.js"></script>
-  <script src="./assets/js/components/hs.show-animation.js"></script>
-  <script src="./assets/js/components/hs.svg-injector.js"></script>
-  <script src="./assets/js/components/hs.go-to.js"></script>
+  <script src="../Site/assets/js/hs.core.js"></script>
+  <script src="../Site/assets/js/components/hs.header.js"></script>
+  <script src="../Site/assets/js/components/hs.unfold.js"></script>
+  <script src="../Site/assets/js/components/hs.focus-state.js"></script>
+  <script src="../Site/assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../Site/assets/js/components/hs.validation.js"></script>
+  <script src="../Site/assets/js/components/hs.show-animation.js"></script>
+  <script src="../Site/assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../Site/assets/js/components/hs.quantity-counter.js"></script>
+  <script src="../Site/assets/js/components/hs.selectpicker.js"></script>
+  <script src="../Site/assets/js/components/hs.svg-injector.js"></script>
+  <script src="../Site/assets/js/components/hs.go-to.js"></script>
 
-  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="./assets/js/hs.core.js"></script>
-  <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="./assets/js/components/hs.slick-carousel.js"></script>
-
-  <script src="./assets/js/components/hs.focus-state.js"></script>
-  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="./js/scripts.js"></script>
-
-  <!-- JS Implementing Plugins -->
-
+  <!-- JS Plugins Init. -->
   <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.hs-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
     $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
       // initialization of forms
       $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of slick carousel
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of quantity counter
+      $.HSCore.components.HSQantityCounter.init('.js-quantity');
+
+      // initialization of select picker
+      $.HSCore.components.HSSelectPicker.init('.js-select');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
     });
-  </script>
-  <!-- JS Front -->
-
-  <script>
-    $("#suggest ul li").on("click", function () {
-      alert("click en suggest")
-    })
-
-    $("#searchInput").focus(function () {
-      $("#suggest").css("display", "block");
-    })
-
-    $("#suggest").mouseleave(function () {
-      $("#suggest").css("display", "none");
-    });
-
-    $("#triggerSearch").on("click", function () {
-      $("#search").addClass("active")
-    })
-
-    $("#searchInput").blur(function () {
-      $("#search").removeClass("active")
-    })
-
-    $("#closeIconSearch").on("click", function () {
-      $("#search").removeClass("active")
-    })
   </script>
 </body>
 

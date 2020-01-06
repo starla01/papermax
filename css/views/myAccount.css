@@ -73,14 +73,14 @@
   width: 100%;
   height: 120px;
   border-radius: 6px 6px 0 0;
-  background-image: url(https://www.tendencias21.net/photo/art/grande/16915302-21520842.jpg?v=1504441206);
+  background-color: #cacaca;
 }
 
 #photo-profile {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #146c53;
+  background-color: #2f80ed;
   position: absolute;
   top: 60px;
   left: 50%;

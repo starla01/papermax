@@ -202,7 +202,6 @@
 
 .qtyControls {
   height: 28px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -251,4 +250,9 @@
   justify-content: center;
   margin-left: 4px;
   cursor: pointer;
+}
+
+#container-empty-cart {
+  text-align: center;
+  margin: 50px 0;
 }

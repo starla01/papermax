@@ -34,249 +34,316 @@
 
   <link rel="stylesheet" href="./assets/css/theme.css">
   <link rel="stylesheet" href="css/views/checkout.css">
+  <link rel="stylesheet" href="css/components/_top_nav_header.css">
 
 </head>
 
 <body>
-
   <!-- HEADER -->
-  <header class="headerPaper contain">
-    <div id="top-header">
-      <div id="containerTopHeader">
-        <div class="elemTopHeader">
-          <a href="/es" class="topHeaderTexts">
-            Soporte: soporte@baco.com.mx
-          </a>
-        </div>
-        <div class="elemTopHeader">
-          <a href="/es" class="topHeaderTexts">
-            Teléfono: +52 (55) 4309 4589
-          </a>
-        </div>
-        <div class="elemTopHeader">
-          <a href="/es">
-            <img src="images//flags/usa.png" width="20" />
-          </a>
-        </div>
+  <div id="top-header">
+    <div id="containerTopHeader">
+      <div class="elemTopHeader">
+        <a href="/es" class="topHeaderTexts">
+          Soporte: soporte@baco.com.mx
+        </a>
+      </div>
+      <div class="elemTopHeader">
+        <a href="/es" class="topHeaderTexts">
+          Teléfono: +52 (55) 4309 4589
+        </a>
+      </div>
+      <div class="elemTopHeader">
+        <a href="/es">
+          <img src="images/flags/usa.png" width="20" />
+        </a>
       </div>
     </div>
-    <div class="row header-row">
+  </div>
+  <header id="new-header">
+    <div id="logoPaper" class="containerNav">
+      <img src="./images/logo.png" width="160">
+    </div>
+    <div id="search" class="containerNav">
+      <div id="triggerDeptos">
+        <i class="material-icons">
+          menu
+        </i>
+        <span id="deptosText">Departamentos</span>
+        <div id="menuContainer">
+          <div id="deptos">
+            <div class="depto">
+              <a href="/oficina">
+                <div>Oficina</div>
+              </a>
 
-      <div class="header-menu">
-        <label for="btn-menu" id="labelMenu" class="header-menu__label"><img src="./icons/menu.png"
-            alt="menuHamburguesa" id="imgMenu" /></label>
-
-        <span class="header-menu__txt">DEPARTAMENTOS</span>
-        <!-- Home - Mega Menu -->
-        <div id="navBarHeader" class="hs-mega-menu w-300 u-header__sub-menu" aria-labelledby="homeMegaMenu">
-          <div class="row no-gutters">
-            <div class="col-lg-6">
-              <!-- Banner Image -->
-              <div class="u-header__banner" style="background-image: url(images/oficina.jpg);">
-                <div class="u-header__banner-content">
-                  <div class="mb-4">
-                    <span class="u-header__banner-title">Articulos para la oficina</span>
-                    <p class="u-header__banner-text">La mejor experiencia en cálidad y diseño
-                    </p>
-                  </div>
-                </div>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="oficina">
+                <ul>
+                  <li><a href="/">Broche para archivo</a></li>
+                  <li><a href="/">Broches latonados</a></li>
+                  <li><a href="/">Clips</a></li>
+                  <li><a href="/">Agarrapapeles Bull Dog</a></li>
+                  <li><a href="/">Agarrapapeles tipo pinza</a></li>
+                  <li><a href="/">Grapas</a></li>
+                  <li><a href="/">Carpeta tipo pressboard</a></li>
+                  <li><a href="/">Carpetas de vinil "O"</a></li>
+                  <li><a href="/">Carpetas de vinil "D"</a></li>
+                  <li><a href="/">Guias para archivo</a></li>
+                  <li><a href="/">Protectores, separadores e indices</a></li>
+                  <li><a href="/">Tablas agarrapapeles</a></li>
+                  <li><a href="/">Chinches</a></li>
+                </ul>
               </div>
-              <!-- End Banner Image -->
             </div>
-
-            <div class="col-lg-6">
-              <div class="row u-header__mega-menu-wrapper">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <span class="u-header__sub-menu-title">Classic</span>
-                  <ul class="u-header__sub-menu-nav-group mb-3">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="index.html">Classic Agency</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-business.html">Classic
-                        Business</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-marketing.html">Classic
-                        Marketing</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-consulting.html">Classic
-                        Consulting</a>
-                    </li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-start-up.html">Classic
-                        Start-up</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-studio.html">Classic Studio <span
-                          class="badge badge-success badge-pill ml-1">New</span></a></li>
-                  </ul>
-
-                  <span class="u-header__sub-menu-title">Corporate</span>
-                  <ul class="u-header__sub-menu-nav-group mb-3">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-agency.html">Corporate
-                        Agency</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-start-up.html">Corporate
-                        Start-Up</a>
-                    </li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-business.html">Corporate
-                        Business</a>
-                    </li>
-                  </ul>
-
-                  <span class="u-header__sub-menu-title">Portfolio</span>
-                  <ul class="u-header__sub-menu-nav-group">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="portfolio-agency.html">Portfolio
-                        Agency</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="portfolio-profile.html">Portfolio
-                        Profile</a></li>
-                  </ul>
-                </div>
-
-                <div class="col-sm-6">
-                  <span class="u-header__sub-menu-title">App</span>
-                  <ul class="u-header__sub-menu-nav-group mb-3">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="app-ui-kit.html">App UI kit</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="app-saas.html">App SaaS</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="app-workflow.html">App Workflow</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="app-payment.html">App Payment</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="app-software.html">App Software</a></li>
-                  </ul>
-
-                  <span class="u-header__sub-menu-title">Onepages</span>
-                  <ul class="u-header__sub-menu-nav-group mb-3">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="onepage-corporate.html">Corporate <span
-                          class="badge badge-success badge-pill ml-1">New</span></a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="onepage-creative.html">Creative</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="onepage-saas.html">SaaS</a></li>
-                  </ul>
-
-                  <span class="u-header__sub-menu-title">Blog</span>
-                  <ul class="u-header__sub-menu-nav-group">
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-agency.html">Blog Agency</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-start-up.html">Blog Start-Up</a></li>
-                    <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-business.html">Blog Business</a></li>
-                  </ul>
-                </div>
+            <div class="depto">
+              <a href="/escritura">
+                <div>Escritura</div>
+              </a>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escritura">
+                <ul>
+                  <li><a href="/">Marcador permanente barril de alimunio</a></li>
+                  <li><a href="/">Marcador permanente barril de plastico</a></li>
+                  <li><a href="/">Marcador permanente barril punto fino</a></li>
+                  <li><a href="/">Marcador Tizapen barril de alimunio</a></li>
+                  <li><a href="/">Marcador Tizapen barril de plastico</a></li>
+                  <li><a href="/">Resaltador Flouresente</a></li>
+                  <li><a href="/">Resaltador Flouresente fino</a></li>
+                  <li><a href="/">Marcatextos</a></li>
+                  <li><a href="/">Marcador base de agua</a></li>
+                  <li><a href="/">Plumines</a></li>
+                  <li><a href="/">Marcadores de cera</a></li>
+                  <li><a href="/">Crayones</a></li>
+                  <li><a href="/">Lapices</a></li>
+                  <li><a href="/">Bolígrafo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <a href="escolar">
+                <div>Escolar</div>
+              </a>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escolar">
+                <ul>
+                  <li><a href="/">Gises</a></li>
+                  <li><a href="/">Acuarelas</a></li>
+                  <li><a href="/">Colores para cartel</a></li>
+                  <li><a href="/">Pintura acrilica</a></li>
+                  <li><a href="/">Plastilina</a></li>
+                  <li><a href="/">Gomas</a></li>
+                  <li><a href="/">Tijeras</a></li>
+                  <li><a href="/">Cortadores</a></li>
+                  <li><a href="/">Abacos</a></li>
+                  <li><a href="/">Manguillo y plumilla</a></li>
+                  <li><a href="/">Compaces</a></li>
+                  <li><a href="/">Estuches geometricos</a></li>
+                  <li><a href="/">Equipos geometricos</a></li>
+                  <li><a href="/">Reglas</a></li>
+                  <li><a href="/">Reglas T</a></li>
+                  <li><a href="/">Transportadores</a></li>
+                  <li><a href="/">Transportadores 360</a></li>
+                  <li><a href="/">Escuadras</a></li>
+                  <li><a href="/">Escuadras profesionales</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Home - Mega Menu -->
       </div>
-
-      <div class="header-logo">
-        <img class="header-logo__img" src="./images/logo.png" alt="logo" />
-      </div>
-      <div class="header-form" id="form">
-        <input type="search" class="header-form__input" id="inputSearch"
-          placeholder="Busca por producto, marca o departamento" />
+      <div id="triggerSearch">
+        <input type="text" id="searchInput" placeholder="Busca por producto o marca" autocomplete="off" />
+        <i class="material-icons closeIcon" id="closeIconSearch">
+          close
+        </i>
+        <i class="material-icons" id="iconSearch">
+          search
+        </i>
         <div id="suggest">
           <ul>
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Papel crepe</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
-            <a href="/">
-              <li><i class="material-icons">
-                  search
-                </i>Compas de presición</li>
-            </a>
-
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
 
           </ul>
         </div>
-        <button class="header-form__btn" id="btnSearch">
-          <img src="./icons/search.png" alt="search" id="imgSearch" />
-        </button>
       </div>
-      <div class="header-botones">
-        <div class="header-botones__cuenta">
-          <img src="./icons/user.png" alt="user" class="user" />
-          <span id="hello">Hola, </span><span id="name">Fernando</span>
-          <div id="myAccount">
-            <span id="triangle"></span>
-            <div class="menuLogin" id="withLogin">
-              <ul>
-                <li><a href="/registro">
-                    Hola, Fernando</a></li>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      favorite
-                    </i>Mis favoritos</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      shopping_basket
-                    </i>Mis pedidos</a></li>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      dashboard
-                    </i>Mi cuenta</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      input
-                    </i> Cerrar sesión</a></li>
-              </ul>
-            </div>
-            <div class="menuLogin" id="withOutLogin">
-              <ul>
-                <li><a href="/registro">
-                    <i class="material-icons">
-                      account_box
-                    </i>Registro</a></li>
-                <li><a href="/login">
-                    <i class="material-icons">
-                      assignment_ind
-                    </i>Iniciar sesión</a></li>
-              </ul>
-            </div>
+    </div>
+    <div id="accountNav" class="containerNav">
+      <div id="capsuleAccount">
+        <i class="material-icons">
+          account_circle
+        </i>
+        &nbsp;
+        <span id="nameAccount"><b>Hola</b>, Fernando</span>
+        <div id="myAccount">
+          <span id="triangle"></span>
+          <div class="menuLogin" id="withLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    favorite
+                  </i>Mis favoritos</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    shopping_basket
+                  </i>Mis pedidos</a></li>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    dashboard
+                  </i>Mi cuenta</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    input
+                  </i> Cerrar sesión</a></li>
+            </ul>
+          </div>
+          <div class="menuLogin" id="withOutLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    account_box
+                  </i>Registro</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    assignment_ind
+                  </i>Iniciar sesión</a></li>
+            </ul>
           </div>
         </div>
-        <div class="centro"></div>
-        <div class="header-botones__tienda">
-          <img src="./icons/shop.png" alt="shop" class="shop" />
-          <div id="list_cart">
-            <h3 id="titleSmartCart">Mi Carrito</h3>
-            <div id="listItems">
-              <ul>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color</span></div>
+      </div>
+      <div id="capsuleCart">
+        <div id="counterItems">99</div>
+        <i class="material-icons">
+          shopping_cart
+        </i>
+        <div id="list_cart">
+          <h3 id="titleSmartCart">Mi Carrito</h3>
+          <div id="listItems">
+            <ul>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
                   <span class="price">$299.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores Mapita</span></div>
-                  <span class="price">$19.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Colores blancanieves</span></div>
-                  <span class="price">$34.90</span>
-                </li>
-                <li>
-                  <div class="name"><img src="./images/imgSm.png"><span>Escuadras profesionales de presición</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
                   </div>
-                  <span class="price">$699.90</span>
-                </li>
-              </ul>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="totalCart">
+            <div id="subTotal">
+              <span>Subtotal</span>
+              <span><b>$1,078.00</b></span>
             </div>
-            <div id="totalCart">
-              <div id="subTotal">
-                <span>Subtotal</span>
-                <span><b>$1,078.00</b></span>
-              </div>
-              <div id="viewCart">
-                Ir a Carrito
-              </div>
+            <div id="viewCart">
+              Ir a Carrito
             </div>
           </div>
         </div>
@@ -461,9 +528,11 @@
                 <p class="small-title">Es muy facil pagar con nuestro con depósitos, solo sigue los siguientes pasos</p>
 
                 <ul id="payment-steps">
-                  <li class="step"> <span class="num-step">1. </span>Paga tu pedido depositando en el siguiente numero de cuenta</li>
-                  <li class="step">	<span class="num-step">HSBC&nbsp;</span> <b>2393049 3049 093 93944993</b></li>
-                  <li class="step">	<span class="num-step">2. </span>Reporta tu pago enviandonos un correo a contacto-pagos@baco.com.mx</li>
+                  <li class="step"> <span class="num-step">1. </span>Paga tu pedido depositando en el siguiente numero
+                    de cuenta</li>
+                  <li class="step"> <span class="num-step">HSBC&nbsp;</span> <b>2393049 3049 093 93944993</b></li>
+                  <li class="step"> <span class="num-step">2. </span>Reporta tu pago enviandonos un correo a
+                    contacto-pagos@baco.com.mx</li>
 
                 </ul>
 
@@ -472,7 +541,9 @@
                   Bancos donde puedes pagar
                 </h5>
                 <br />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/1200px-HSBC_logo_%282018%29.svg.png" width="30%" />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/1200px-HSBC_logo_%282018%29.svg.png"
+                  width="30%" />
 
               </div>
               <!-- End Title -->

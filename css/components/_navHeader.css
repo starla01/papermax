@@ -80,7 +80,8 @@
 }
 
 #capsuleAccount {
-  width: 170px;
+  min-width: 55px;
+  padding: 0 10px;
   height: 40px;
   background-color: #2f80ed;
   color: white;
@@ -257,20 +258,20 @@
 }
 
 #capsuleCart:hover > #list_cart {
-  transition: 0.4s;
   right: 0;
 }
 
 #list_cart {
-  width: 260px;
+  width: 300px;
   position: fixed;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.99);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  right: -260px;
+  right: -300px;
   color: black;
   top: 0;
   z-index: 4;
+  transition: 0.4s;
 }
 
 #list_cart #listItems {
@@ -295,10 +296,27 @@
 }
 
 #list_cart #listItems ul li {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #e8e8e8;
   padding: 10px 5px;
+}
+
+#list_cart #listItems ul li .first-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+#list_cart #listItems ul li .second-line {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#list_cart #listItems ul li .second-line .qtyControls {
+  margin-right: 20px;
+}
+
+#list_cart #listItems ul li .second-line i.trash {
+  color: #da1a1a;
 }
 
 #list_cart #listItems ul li .name {
@@ -331,6 +349,7 @@
   width: 100%;
   padding: 10px 6px 10px 6px;
   box-sizing: border-box;
+  background-color: white;
 }
 
 #list_cart #totalCart #subTotal {
@@ -377,7 +396,8 @@
 }
 
 #deptos .depto:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #2f80ed;
+  color: white;
 }
 
 #deptos .depto:first-child {
@@ -385,6 +405,15 @@
 }
 #deptos .depto:hover > .family {
   display: block;
+  color: white;
+}
+
+#deptos .depto > a {
+  color: #343a40;
+}
+
+#deptos .depto:hover > a {
+  color: white;
 }
 
 .family {
@@ -409,6 +438,7 @@
 .family ul li {
   list-style-type: none;
   padding: 7px 0 7px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .family ul li:hover {
   background-color: rgba(0, 0, 0, 0.03);
@@ -419,6 +449,48 @@
 .family ul li a {
   color: gray;
   font-size: 12px;
+}
+
+#minus {
+  order: 1;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #afafaf;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  cursor: pointer;
+}
+#qty {
+  order: 2;
+  width: 50px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+#plus:hover,
+#minus:hover {
+  background-color: #2f80ed;
+}
+
+#plus {
+  order: 3;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #afafaf;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 770px) {
