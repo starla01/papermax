@@ -1,9 +1,9 @@
 #account-section {
   height: auto;
-  width: 1366px;
+  width: 1200px;
   display: flex;
   flex: 1 auto;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 #nav-account {
@@ -58,7 +58,7 @@
 }
 
 #content-account {
-  width: 100%;
+  width: calc(100% - 250px);
   padding: 20px 50px 80px 80px;
   box-sizing: border-box;
 }
@@ -189,12 +189,20 @@
   border: 2px solid #2f80ed;
 }
 
-.addresTypeTitle {
+.editControls {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
   font-size: 22px;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.addressEditIcon {
+  width: 27px;
 }
 
 .addressItem:hover {
@@ -213,11 +221,19 @@
   overflow: hidden;
   width: 100%;
   color: #333;
+  height: 24px;
 }
+
+.phoneType {
+  height: 24px;
+}
+
 .addressType {
   font-size: 12px;
   line-height: 16px;
   color: #333;
+  height: 75px;
+  overflow: hidden;
 }
 
 .text-center button {
@@ -241,11 +257,14 @@
 }
 
 .material-icons.editIcon {
-  position: absolute;
   right: 5px;
   top: 13px;
   font-size: 22px;
   color: #333;
+}
+
+.material-icons.editIcon.delete:hover {
+  color: red;
 }
 
 .material-icons.editIcon:hover {
@@ -309,4 +328,36 @@
 
 .nameProductDetail {
   width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+  #content-account {
+    width: 100%;
+    padding: 20px;
+  }
+  #account-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nav-account {
+    width: 100%;
+  }
+  #nav-account #user-profile {
+    display: none;
+  }
+  #nav-account ul {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+  }
+  #nav-account ul li {
+    width: 33.3%;
+  }
+  #nav-account ul li > i,
+  #nav-account ul li span > i {
+    display: none;
+  }
+  .contain-center {
+    width: 100%;
+  }
 }

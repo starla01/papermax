@@ -88,3 +88,7 @@
 .card_brand .data_brand {
   margin: 0 10px;
 }
+
+a .material-icons.full-red {
+  color: red !important;
+}

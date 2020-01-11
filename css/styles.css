@@ -910,9 +910,9 @@ footer .lineaFooter {
 
 .main-home.contain {
   width: 100% !important;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 .main-home.contain .contain-center {
@@ -938,4 +938,8 @@ footer .lineaFooter {
   position: relative;
   padding-top: 4px;
   color: #788390;
+}
+
+.btn.btn-primary.full {
+  width: 100%;
 }
