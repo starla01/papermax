@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/components/_navHeader.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <!-- CSS Front Template -->
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+
+  <link rel="stylesheet" href="./assets/vendor/custombox/dist/custombox.min.css">
+
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="css/views/checkout.css">
+  <link rel="stylesheet" href="css/components/_top_nav_header.css">
+
+
+</head>
+
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="top-header">
+    <div id="containerTopHeader">
+      <div class="elemTopHeader">
+        <a href="/es" class="topHeaderTexts">
+          Soporte: soporte@baco.com.mx
+        </a>
+      </div>
+      <div class="elemTopHeader">
+        <a href="/es" class="topHeaderTexts">
+          Teléfono: +52 (55) 4309 4589
+        </a>
+      </div>
+      <div class="elemTopHeader">
+        <a href="/es">
+          <img src="images/flags/usa.png" width="20" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <header id="new-header">
+    <div id="logoPaper" class="containerNav">
+      <img src="./images/logo.png" width="160">
+    </div>
+    <div id="search" class="containerNav">
+      <div id="triggerDeptos">
+        <i class="material-icons">
+          menu
+        </i>
+        <span id="deptosText">Departamentos</span>
+        <div id="menuContainer">
+          <div id="deptos">
+            <div class="depto">
+              <a href="/oficina">
+                <div>Oficina</div>
+              </a>
+
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="oficina">
+                <ul>
+                  <li><a href="/">Broche para archivo</a></li>
+                  <li><a href="/">Broches latonados</a></li>
+                  <li><a href="/">Clips</a></li>
+                  <li><a href="/">Agarrapapeles Bull Dog</a></li>
+                  <li><a href="/">Agarrapapeles tipo pinza</a></li>
+                  <li><a href="/">Grapas</a></li>
+                  <li><a href="/">Carpeta tipo pressboard</a></li>
+                  <li><a href="/">Carpetas de vinil "O"</a></li>
+                  <li><a href="/">Carpetas de vinil "D"</a></li>
+                  <li><a href="/">Guias para archivo</a></li>
+                  <li><a href="/">Protectores, separadores e indices</a></li>
+                  <li><a href="/">Tablas agarrapapeles</a></li>
+                  <li><a href="/">Chinches</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <a href="/escritura">
+                <div>Escritura</div>
+              </a>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escritura">
+                <ul>
+                  <li><a href="/">Marcador permanente barril de alimunio</a></li>
+                  <li><a href="/">Marcador permanente barril de plastico</a></li>
+                  <li><a href="/">Marcador permanente barril punto fino</a></li>
+                  <li><a href="/">Marcador Tizapen barril de alimunio</a></li>
+                  <li><a href="/">Marcador Tizapen barril de plastico</a></li>
+                  <li><a href="/">Resaltador Flouresente</a></li>
+                  <li><a href="/">Resaltador Flouresente fino</a></li>
+                  <li><a href="/">Marcatextos</a></li>
+                  <li><a href="/">Marcador base de agua</a></li>
+                  <li><a href="/">Plumines</a></li>
+                  <li><a href="/">Marcadores de cera</a></li>
+                  <li><a href="/">Crayones</a></li>
+                  <li><a href="/">Lapices</a></li>
+                  <li><a href="/">Bolígrafo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="depto">
+              <a href="escolar">
+                <div>Escolar</div>
+              </a>
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+              <div class="family" id="escolar">
+                <ul>
+                  <li><a href="/">Gises</a></li>
+                  <li><a href="/">Acuarelas</a></li>
+                  <li><a href="/">Colores para cartel</a></li>
+                  <li><a href="/">Pintura acrilica</a></li>
+                  <li><a href="/">Plastilina</a></li>
+                  <li><a href="/">Gomas</a></li>
+                  <li><a href="/">Tijeras</a></li>
+                  <li><a href="/">Cortadores</a></li>
+                  <li><a href="/">Abacos</a></li>
+                  <li><a href="/">Manguillo y plumilla</a></li>
+                  <li><a href="/">Compaces</a></li>
+                  <li><a href="/">Estuches geometricos</a></li>
+                  <li><a href="/">Equipos geometricos</a></li>
+                  <li><a href="/">Reglas</a></li>
+                  <li><a href="/">Reglas T</a></li>
+                  <li><a href="/">Transportadores</a></li>
+                  <li><a href="/">Transportadores 360</a></li>
+                  <li><a href="/">Escuadras</a></li>
+                  <li><a href="/">Escuadras profesionales</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="triggerSearch">
+        <input type="text" id="searchInput" placeholder="Busca por producto o marca" autocomplete="off" />
+        <i class="material-icons closeIcon" id="closeIconSearch">
+          close
+        </i>
+        <i class="material-icons" id="iconSearch">
+          search
+        </i>
+        <div id="suggest">
+          <ul>
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+            <li>
+              <i class="material-icons">
+                search</i>
+              <div class="texts">
+                <p class="text">Papel crepe</p>
+                <p class="subText">erwt erweor erwer wrwesa f wer wrsa we r</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="accountNav" class="containerNav">
+      <div id="capsuleAccount">
+        <i class="material-icons">
+          account_circle
+        </i>
+        &nbsp;
+        <span id="nameAccount"><b>Hola</b>, Fernando</span>
+        <div id="myAccount">
+          <span id="triangle"></span>
+          <div class="menuLogin" id="withLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    favorite
+                  </i>Mis favoritos</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    shopping_basket
+                  </i>Mis pedidos</a></li>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    dashboard
+                  </i>Mi cuenta</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    input
+                  </i> Cerrar sesión</a></li>
+            </ul>
+          </div>
+          <div class="menuLogin" id="withOutLogin">
+            <ul>
+              <li><a href="/registro">
+                  <i class="material-icons">
+                    account_box
+                  </i>Registro</a></li>
+              <li><a href="/login">
+                  <i class="material-icons">
+                    assignment_ind
+                  </i>Iniciar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="capsuleCart">
+        <div id="counterItems">99</div>
+        <i class="material-icons">
+          shopping_cart
+        </i>
+        <div id="list_cart">
+          <h3 id="titleSmartCart">Mi Carrito</h3>
+          <div id="listItems">
+            <ul>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+              <li>
+                <div class="first-line">
+                  <div class="name"><img src="./images/imgSm.png"><span>Colores prisma color - Colores prisma
+                      color</span></div>
+                  <span class="price">$299.90</span>
+                </div>
+                <div class="second-line">
+                  <div class="qtyControls">
+                    <i class="material-icons" id="minus"> remove </i>
+                    <input type="text" value="1" class="qtyText" id="qty" />
+                    <i class="material-icons" id="plus"> add </i>
+                  </div>
+                  <i class="material-icons trash">
+                    delete
+                  </i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="totalCart">
+            <div id="subTotal">
+              <span>Subtotal</span>
+              <span><b>$1,078.00</b></span>
+            </div>
+            <div id="viewCart">
+              Ir a Carrito
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Checkout Section -->
+    <div class="container space-1 ">
+      <div class="row">
+        <div class="col-lg-4 order-lg-2 mb-7 mb-lg-0">
+          <div class="pl-lg-4">
+            <!-- Order Summary -->
+            <div class="border shadow-soft rounded p-5 mb-4">
+              <!-- Title -->
+              <div class="border-bottom pb-4 mb-4">
+                <h2 class="h5 mb-0">Orden</h2>
+              </div>
+              <!-- End Title -->
+
+              <!-- Product Content -->
+              <div class="border-bottom pb-4 mb-4">
+                <div class="media">
+                  <div class="position-relative max-width-10 w-100 mr-3">
+                    <img class="img-fluid" src="./images/imgSm.png" alt="Image Description">
+                    <span class="badge badge-sm badge-primary badge-pos rounded-circle">1</span>
+                  </div>
+                  <div class="media-body">
+                    <h2 class="h6">Originals national backpack</h2>
+                    <div class="text-secondary font-size-1">
+                      <span>Genero:</span>
+                      <span>Men</span>
+                    </div>
+                    <div class="text-secondary font-size-1">
+                      <span>Color:</span>
+                      <span>Grey</span>
+                    </div>
+                    <div class="text-secondary font-size-1">
+                      <span>Tamaño:</span>
+                      <span>One size</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Product Content -->
+
+              <!-- Product Content -->
+              <div class="border-bottom pb-4 mb-4">
+                <div class="media">
+                  <div class="position-relative max-width-10 w-100 mr-3">
+                    <img class="img-fluid" src="./images/imgSm.png" alt="Image Description">
+                    <span class="badge badge-sm badge-primary badge-pos rounded-circle">1</span>
+                  </div>
+                  <div class="media-body">
+                    <h2 class="h6">Vans large image t-shirt</h2>
+                    <div class="text-secondary font-size-1">
+                      <span>Genero:</span>
+                      <span>Women</span>
+                    </div>
+                    <div class="text-secondary font-size-1">
+                      <span>Color:</span>
+                      <span>Core Black / Carbon</span>
+                    </div>
+                    <div class="text-secondary font-size-1">
+                      <span>Tamaño:</span>
+                      <span>SM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Product Content -->
+
+              <div>
+                <form>
+                  <div class="form-group">
+                    <div class="js-focus-state input-group mb-2">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">
+                            person_pin
+                          </i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Código postal" aria-label="cp">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <hr />
+              <!-- Fees -->
+              <div class="border-bottom pb-4 mb-4">
+                <div class="media align-items-center mb-3">
+                  <h3 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Subtotal (2) Artículos</h3>
+                  <div class="media-body text-right">
+                    <span class="font-weight-medium">$73.98</span>
+                  </div>
+                </div>
+
+                <div class="media align-items-center mb-3">
+                  <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Envío</h4>
+                  <div class="media-body text-right">
+                    <span class="font-weight-medium">Gratis</span>
+                  </div>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="card border-0 mb-3">
+                  <div class="card-body p-0">
+                    <div class="custom-control custom-radio d-flex align-items-center small">
+                      <input type="radio" class="custom-control-input" id="deliveryRadio1" name="deliveryRadio" checked>
+                      <label class="custom-control-label ml-1" for="deliveryRadio1">
+                        <span class="d-block font-size-1 font-weight-medium mb-1">Gratis - Envío Standard</span>
+                        <span class="d-block text-muted">El envío puede tardar de 5 a 6 días habiles.</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Checkbox -->
+
+                <!-- Checkbox -->
+                <div class="card border-0 mb-3">
+                  <div class="card-body p-0">
+                    <div class="custom-control custom-radio d-flex align-items-center small">
+                      <input type="radio" class="custom-control-input" id="deliveryRadio2" name="deliveryRadio">
+                      <label class="custom-control-label ml-1" for="deliveryRadio2">
+                        <span class="d-block font-size-1 font-weight-medium mb-1">$7.99 - Envío Express</span>
+                        <span class="d-block text-muted">El envío puede tardar de 2 a 3 días habiles.</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Checkbox -->
+
+                <div class="media align-items-center">
+                  <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Impuestos (IVA)</h4>
+                  <div class="media-body text-right">
+                    <span class="font-weight-medium">$98.00</span>
+                  </div>
+                </div>
+              </div>
+              <!-- End Fees -->
+
+              <!-- Total -->
+              <div class="media align-items-center">
+                <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Total</h4>
+                <div class="media-body text-right">
+                  <span class="font-weight-semi-bold">$73.98</span>
+                </div>
+              </div>
+              <!-- End Total -->
+            </div>
+            <!-- End Order Summary -->
+
+            <!-- Accordion -->
+            <div id="shopCartAccordion" class="accordion rounded shadow-soft mb-4">
+              <!-- Card -->
+              <div class="card rounded">
+                <div class="card-header card-collapse" id="shopCartHeadingOne">
+                  <h3 class="mb-0">
+                    <button type="button" class="btn btn-link btn-block card-btn font-weight-medium collapsed"
+                      data-toggle="collapse" data-target="#shopCartOne" aria-expanded="false"
+                      aria-controls="shopCartOne">
+                      Código de promoción?
+                      <span class="far fa-question-circle text-secondary ml-1" data-container="body"
+                        data-toggle="popover" data-placement="top" data-trigger="hover" title="Promo code"
+                        data-content="Valid on full priced items only. Some products maybe excluded."></span>
+                    </button>
+                  </h3>
+                </div>
+                <div id="shopCartOne" class="collapse" aria-labelledby="shopCartHeadingOne"
+                  data-parent="#shopCartAccordion">
+                  <form class="js-validate p-5">
+                    <div class="input-group input-group-pill mb-3">
+                      <input type="text" class="form-control" name="name" placeholder="Promo code"
+                        aria-label="Promo code">
+                      <div class="input-group-append">
+                        <button type="submit"
+                          class="btn btn-block btn-primary btn-pill transition-3d-hover">Aplicar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Accordion -->
+          </div>
+        </div>
+
+        <div class="col-lg-8 order-lg-1">
+          <div id="containerCheckout">
+            <div id="breadcrumbCheckout">
+              <ul id=chBreadcrumbList>
+                <li class="bList ">
+                  <i class="material-icons">account_circle</i>
+                  <span>Datos de usuario</span>
+                </li>
+                <li class="bList">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                </li>
+                <li class="bList active">
+                  <i class="material-icons">credit_card</i>
+                  <span>Método de pago</span>
+                </li>
+                <li class="bList">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                </li>
+                <li class="bList">
+                  <i class="material-icons">check_circle</i>
+                  <span>Confirmación de pago</span>
+                </li>
+              </ul>
+            </div>
+            <div id="contentCheckout">
+              <!-- Title -->
+              <div class="">
+                <h6 class="h6">Método de pago</h6>
+              </div>
+              <form>
+                <br />
+                <div id="selectedPayment">
+                  <div>
+                    <input name="paymentType" type="radio" id="TDC" /> <span>Tarjeta de credito</span>
+                  </div>
+                  <div>
+                    <input name="paymentType" type="radio" id="TDC" /> <span>Deposito</span>
+                  </div>
+                  <div>
+                    <input name="paymentType" type="radio" id="TDC" /> <span>Efectivo</span>
+                  </div>
+                </div>
+
+                <!-- Payment -->
+                <div class="mb-7">
+                  <!-- Title -->
+                  <div class="mb-4">
+                    <br />
+                    <div class="">
+                      <h6 class="h6">Tarjeta de crédito</h6>
+                    </div>
+                  </div>
+                  <!-- End Title -->
+
+                  <div id="card-glass">
+                    <div id="card-template">
+                      <p class="white">Banco</p>
+                      <p class="white" id="numberCard">**** **** **** ****</p>
+                      <div class="white">
+                        <span id="dateCard">MM/AA</span>
+                        <span id="cvvCard">CVV: ***</span>
+                      </div>
+                      <div class="white">
+                        <span id="nameCard">Jack Wayley</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Input -->
+                  <div class="js-form-message mb-6">
+                    <label class="form-label">
+                      Tarjeta
+                    </label>
+                    <input type="text" class="form-control" name="cardNumber" placeholder="**** **** **** ***"
+                      aria-label="**** **** **** ***" required data-msg="Please enter a valid card number."
+                      data-error-class="u-has-error" data-success-class="u-has-success"
+                      onkeyup="numberCardFn(this.value, 'numberCard')">
+                  </div>
+                  <!-- End Input -->
+
+                  <div class="row">
+                    <div class="col-md-8">
+                      <!-- Input -->
+                      <div class="js-form-message mb-6">
+                        <label class="form-label">
+                          Nombre como aparece en tu tarjeta.
+                        </label>
+                        <input type="text" class="form-control" name="cardHolder" placeholder="Jack Wayley"
+                          aria-label="Jack Wayley" required data-msg="Please enter a valid card holder."
+                          data-error-class="u-has-error" data-success-class="u-has-success"
+                          onkeyup="numberCardFn(this.value, 'nameCard')">
+                      </div>
+                      <!-- End Input -->
+                    </div>
+
+                    <div class="col-md-2">
+                      <!-- Input -->
+                      <div class="js-form-message mb-6">
+                        <label class="form-label">
+                          Expiración
+                        </label>
+                        <input type="text" class="form-control" name="cardExpirationDate" placeholder="MM/YY"
+                          aria-label="MM/YY" required data-msg="Please enter a valid date." data-error-class="u-has-error"
+                          data-success-class="u-has-success" onkeyup="numberCardFn(this.value, 'dateCard')">
+                      </div>
+                      <!-- End Input -->
+                    </div>
+
+                    <div class="col-md-2">
+                      <!-- Input -->
+                      <div class="js-form-message mb-6">
+                        <label class="form-label">
+                          CVC
+                        </label>
+                        <input type="text" class="form-control" name="cardCVC" placeholder="***" aria-label="***" required
+                          data-msg="Please enter a valid CVC number." data-error-class="u-has-error"
+                          data-success-class="u-has-success" onkeyup="numberCardFn(this.value, 'cvvCard')">
+                      </div>
+                      <!-- End Input -->
+                    </div>
+                  </div>
+
+                  <script>
+                    const numberCardFn = (value, id) => {
+                      if (id === 'cvvCard') {
+                        $('#' + id).html('CVV: ' + value);
+                      } else {
+                        $('#' + id).html(value);
+                      }
+
+                    }
+                  </script>
+
+                  <!-- Button -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="checkout-step1.html"><small class="fas fa-arrow-left mr-2"></small> Regresar</a>
+                    <a href="checkout-step3.html">
+                      <button type="submit" class="btn btn-primary btn-sm-wide btn-pill transition-3d-hover">Siguiente</button>
+                    </a>
+                  </div>
+                  <!-- End Button -->
+                </div>
+                <!-- End Payment -->
+              </form>
+
+              <!-- Account Modal Window -->
+              <div id="addPaymentModal" class="js-modal-window u-modal-window" style="width: 480px;">
+                <div class="card border-0">
+                  <!-- Header -->
+                  <header class="card-header bg-light py-3 px-5">
+                    <div class="row justify-content-between align-items-center no-gutters">
+                      <div class="col-6">
+                        <h4 class="h6 mb-0">Agregar | Editar Dirección</h4>
+                      </div>
+
+                      <div class="col-6 text-right">
+                        <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                    </div>
+                  </header>
+                  <!-- End Header -->
+
+                  <form class="js-validate">
+                    <div class="card-body p-5">
+
+                      <!-- Input Group -->
+                      <div class="form-row align-items-center mb-3">
+                        <div class="col-4 text-right">
+                          <label id="amountLabelExample1" class="h6 small d-block text-uppercase mb-0">
+                            Nombre de la direccion
+                          </label>
+                        </div>
+                        <div class="col-8">
+                          <div class="js-form-message">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control" type="text" name="nameAddress" required
+                                placeholder="Mi departamento" aria-label="Mi departamento"
+                                aria-describedby="amountLabelExample1" data-msg="Por favor escribe el nombre de tu dirección"
+                                data-error-class="u-has-error" data-success-class="u-has-success">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Input Group -->
+
+                      <!-- Input Group -->
+                      <div class="form-row align-items-center mb-3">
+                        <div class="col-4 text-right">
+                          <label id="cardNumberLabel" class="h6 small d-block text-uppercase mb-0">
+                            Nombre de quien recibé
+                          </label>
+                        </div>
+                        <div class="col-8">
+                          <div class="js-form-message">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control" type="text" name="name" required placeholder="Nancy Botello"
+                                aria-label="Nancy Botello" aria-describedby="cardNumberLabel"
+                                data-msg="Pro favor introduce un nombre válido" data-error-class="u-has-error"
+                                data-success-class="u-has-success">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Input Group -->
+
+                      <!-- Input Group -->
+                      <div class="form-row align-items-center mb-3">
+                        <div class="col-4 text-right">
+                          <label id="cardholderNameLabel" class="h6 small d-block text-uppercase mb-0">
+                            Correo electrónico
+                          </label>
+                        </div>
+                        <div class="col-8">
+                          <div class="js-form-message">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control" type="mail" name="cardholderName" required
+                                placeholder="correo@mail.com" aria-label="Cardholder name"
+                                aria-describedby="cardholderNameLabel"
+                                data-msg="Por favor introduce un correo electrónico válido" data-error-class="u-has-error"
+                                data-success-class="u-has-success">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Input Group -->
+
+                      <!-- Input Group -->
+                      <div class="form-row align-items-center mb-3">
+                        <div class="col-4 text-right">
+                          <label id="expiresLabel" class="h6 small d-block text-uppercase mb-0">
+                            Teléfono
+                          </label>
+                        </div>
+                        <div class="col-8">
+                          <div class="js-form-message">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control" type="number" name="phone" required placeholder="(+52) 55 2233 9439"
+                                aria-label="(+52) 55 2233 9439" aria-describedby="expiresLabel"
+                                data-msg="Por favor introduce un numero telefonico válido." data-error-class="u-has-error"
+                                data-success-class="u-has-success">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Input Group -->
+
+                      <!-- Input Group -->
+                      <div class="form-row align-items-center mb-0">
+                        <div class="col-4 text-right">
+                          <label id="cvcLabel" class="h6 small d-block text-uppercase mb-0">
+                            <span class="fas fa-info-circle" data-toggle="tooltip" data-placement="left"
+                              title="Es indispensable coloques tu direccion completa ya que es donde nosotros entregaremos tus pedidos."></span>
+                            Dirección
+                          </label>
+                        </div>
+                        <div class="col-8">
+                          <div class="js-form-message">
+                            <div class="input-group input-group-sm">
+                              <input class="form-control" type="text" name="address" required
+                                placeholder="Deleg. Cuahutemoc, Av del hueso, No 23"
+                                aria-label="Deleg. Cuahutemoc, Av del hueso, No 23" aria-describedby="address"
+                                data-msg="Pro favor intriduce tu dirección completa" data-error-class="u-has-error"
+                                data-success-class="u-has-success">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Input Group -->
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="card-footer py-3 px-5">
+                      <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-sm btn-primary transition-3d-hover mr-1">Agregar
+                          dirección</button>
+                        <button type="submit" class="btn btn-sm btn-soft-secondary transition-3d-hover"
+                          onclick="Custombox.modal.close();">Cancelar</button>
+                      </div>
+                    </div>
+                    <!-- End Buttons -->
+                  </form>
+                </div>
+              </div>
+              <!-- End Account Modal Window -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Checkout Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="redesSociales">
+      <div class="red">
+        <a href="#">
+          <img src="./icons/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="./icons/Twitter.png" alt="Twitter" />
+        </a>
+        <a href="#">
+          <img src="./icons/Instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="contenedorContacto">
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Nosotros</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>¿Quiénes somos?</span>
+          </a>
+          <a href="#">
+            <span>Sucursales</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Atención a Clientes</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Preguntas Frecuentes</span>
+          </a>
+          <a href="#">
+            <span>Facturación Tiendas</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Términos y Condiciones</h4>
+          <span class="spanImage"><img src="./icons/Vector.png" alt="" /></span>
+        </div>
+        <div class="opciones">
+          <a href="#">
+            <span>Aviso de Privacidad</span>
+          </a>
+          <a href="#">
+            <span>Términos y Condiciones</span>
+          </a>
+          <a href="#">
+            <span>Métodos de pago</span>
+          </a>
+        </div>
+      </div>
+      <div class="secContacto">
+        <div class="subtitulo">
+          <h4>Tienda en Línea</h4>
+        </div>
+        <div class="opcionesCont">
+          <span class="spanImage"><img src="./icons/phone.png" alt="phone" class="phone" /></span>
+          <span class="text">55-1234-5678</span>
+          <br />
+          <br />
+          <span><img src="./icons/mail.png" alt="mail" class="mail" /></span>
+          <span class="text mailText">enlinea@papermax.com.mx</span>
+        </div>
+      </div>
+    </div>
+    <div class="lineaFooter"></div>
+    <br />
+    <br />
+    <br />
+  </footer>
+
+
+  <!-- Libreria para sliders -->
+  <!-- JS Global Compulsory -->
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="./assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.header.js"></script>
+  <script src="./assets/js/components/hs.unfold.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="./assets/js/components/hs.validation.js"></script>
+  <script src="./assets/js/components/hs.show-animation.js"></script>
+  <script src="./assets/js/components/hs.svg-injector.js"></script>
+  <script src="./assets/js/components/hs.go-to.js"></script>
+
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="./assets/js/components/hs.slick-carousel.js"></script>
+
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
+  <!-- JS Implementing Plugins -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="./assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/components/hs.modal-window.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-subscribe-window', {
+        autonomous: true
+      });
+    });
+  </script>
+
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+    });
+  </script>
+  <!-- JS Front -->
+
+  <script>
+    $("#suggest ul li").on("click", function () {
+      alert("click en suggest")
+    })
+
+    $("#searchInput").focus(function () {
+      $("#suggest").css("display", "block");
+    })
+
+    $("#suggest").mouseleave(function () {
+      $("#suggest").css("display", "none");
+    });
+
+    $("#triggerSearch").on("click", function () {
+      $("#search").addClass("active")
+    })
+
+    $("#searchInput").blur(function () {
+      $("#search").removeClass("active")
+    })
+
+    $("#closeIconSearch").on("click", function () {
+      $("#search").removeClass("active")
+    })
+  </script>
+</body>
+
+</html>

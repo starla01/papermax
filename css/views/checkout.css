@@ -1,5 +1,5 @@
 #card-glass {
-  margin: 50px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
 }
@@ -87,4 +87,54 @@
   font-size: 20px;
   color: #2f80ed;
   font-weight: 700;
+}
+
+#breadcrumbCheckout {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#breadcrumbCheckout ul {
+  display: flex;
+}
+
+#breadcrumbCheckout ul li {
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#breadcrumbCheckout ul li.active {
+  color: #2f80ed;
+}
+#breadcrumbCheckout ul li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: gray;
+}
+
+#breadcrumbCheckout ul li i {
+  font-size: 30px;
+}
+
+#breadcrumbCheckout ul li span {
+  position: relative;
+  top: 1px;
+  margin: 0 5px;
+}
+
+#contentCheckout {
+  border: 1px solid red;
+  border-radius: 4px;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#navigationButtons {
+  display: flex;
+  justify-content: flex-end;
 }
