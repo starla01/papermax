@@ -1,0 +1,127 @@
+#comparation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+#comparationContainer {
+  max-width: 80%;
+  background-color: white;
+  padding: 10px 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  display: flex;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#comparationContainer .item {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 220px;
+  height: 600px;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#comparationContainer .item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#comparationContainer .item .image {
+  padding: 10px;
+  box-sizing: border-box;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+#comparationContainer .item .name {
+  height: 38px;
+  font-size: 14px;
+  color: #2f80ed;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+#comparationContainer .item .price {
+  height: 38px;
+  font-size: 14px;
+  color: rgb(57, 57, 57);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#comparationContainer .item .chars .compareList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comparationContainer .item .chars .compareList hr {
+  margin: 0;
+}
+
+#comparationContainer .item .chars .compareList li {
+  height: 34px;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px 0;
+  overflow: hidden;
+  color: #333333;
+  display: flex;
+}
+
+#comparationContainer .item .button {
+  width: 90%;
+  border-radius: 30px;
+  padding: 5px 0;
+  text-align: center;
+  color: #2f80ed;
+  font-weight: 700;
+  border: 1px solid #2f80ed;
+  background: #fff;
+  position: absolute;
+  bottom: 10px;
+}
+
+#comparationContainer .item .button:hover {
+  background-color: #2f80ed;
+  color: white;
+}
+
+.closeComparation i {
+  font-size: 30px;
+}
+.closeComparation {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  #comparationContainer {
+    max-width: 95% !important ;
+  }
+  #comparationContainer .item {
+    width: 25%;
+    background-color: white;
+  }
+}

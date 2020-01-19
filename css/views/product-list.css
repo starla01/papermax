@@ -140,7 +140,7 @@
   top: 0;
   right: 0;
   padding: 10px;
-  z-index: 3;
+  z-index: 1;
   color: gray;
   display: flex;
   justify-items: center;

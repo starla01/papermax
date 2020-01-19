@@ -189,7 +189,7 @@
 
 #suggest {
   display: none;
-  width: 150%;
+  width: 100%;
   height: auto;
   border-radius: 0 6px 6px 6px;
   position: absolute;
@@ -278,6 +278,8 @@
   position: relative;
   top: 0;
   box-sizing: border-box;
+  height: calc(100% - 170px);
+  overflow-y: scroll;
 }
 
 #list_cart #titleSmartCart {
