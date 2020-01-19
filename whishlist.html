@@ -5,9 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Loader</title>
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="./assets/css/theme.css">
+  <title>Carrito</title>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/icons.css" />
@@ -15,33 +13,35 @@
   <link rel="stylesheet" href="./css/components/_navHeader.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/views/page-error.css" rel="stylesheet">
-  <link href="./css/components/_loader.css" rel="stylesheet">
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/components/hs.focus-state.js"></script>
+  <!-- CSS Front Template -->
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="./assets/vendor/animate.css/animate.min.css">
+
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="css/views/product-list.css">
   <link rel="stylesheet" href="css/components/_top_nav_header.css">
+
 
 </head>
 
 <body>
+
   <!-- HEADER -->
-  <div id="top-header">
-    <div id="containerTopHeader">
-      <div class="elemTopHeader">
-        <a href="/es" class="topHeaderTexts">
-          Soporte: soporte@baco.com.mx
-        </a>
-      </div>
-      <div class="elemTopHeader">
-        <a href="/es" class="topHeaderTexts">
-          Teléfono: +52 (55) 4309 4589
-        </a>
-      </div>
-      <div class="elemTopHeader">
-        <a href="/es">
-          <img src="images/flags/usa.png" width="20" />
-        </a>
-      </div>
-    </div>
-  </div>
   <header id="new-header">
     <div id="logoPaper" class="containerNav">
       <img src="./images/logo.png" width="160">
@@ -334,40 +334,146 @@
     </div>
   </header>
 
-  <!-- MAIN -->
-  <div class="main-home contain">
 
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Cart Section -->
+    <div class="container space-md-2">
+      <div >
+        <div class="mb-7 mb-lg-0">
+          <!-- Title -->
+          <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-7">
+            <h1 class="h4 mb-0">Mis favoritos</h1>
+            <span>2 Artículos</span>
+          </div>
+          <!-- End Title -->
 
-    <!-- LOADER -->
-    <div id="loader-container">
-      <div id="loading-img">
-        <i class="material-icons">
-          attach_file
-        </i>
-      </div>
-    </div>
+          <form>
+            <!-- Product Content -->
+            <div class="border-bottom pb-5 mb-5">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <div class="media">
+                    <div class="max-width-15 w-100 mr-3">
+                      <img class="img-fluid" src="./images/imgSm.png" alt="Image Description">
+                    </div>
+                    <div class="media-body">
+                      <h2 class="h6">Originals national backpack</h2>
+                      <div class="text-secondary font-size-1 mb-1">
+                        <span>Color:</span>
+                        <span>Grey</span>
+                      </div>
+                      <div class="text-secondary font-size-1 mb-1">
+                        <span>Tamaño:</span>
+                        <span>One size</span>
+                        <a class="link-muted ml-2" href="javascript:;">Editar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <div id="product-not-found">
-      <div id="image">
-        <div id="circle-mask">
-          <i id="book" class="material-icons">
-            menu_book
-          </i>
-          <i id="search" class="material-icons">
-            location_searching
-          </i>
+                <div class="col-5 col-md-3 offset-md-1">
+                  <select class="custom-select custom-select-sm w-auto mb-3">
+                    <option value="quantity1">1</option>
+                    <option value="quantity2">2</option>
+                    <option value="quantity3">3</option>
+                    <option value="quantity4">4</option>
+                    <option value="quantity5">5</option>
+                    <option value="quantity6">6</option>
+                    <option value="quantity7">7</option>
+                    <option value="quantity8">8</option>
+                    <option value="quantity9">9</option>
+                    <option value="quantity10">10</option>
+                  </select>
+
+                  <a class="d-block text-secondary font-size-1 mb-1" href="javascript:;">
+                    <span class="far fa-trash-alt mr-1"></span>
+                    <span>Remover</span>
+                  </a>
+
+                  <a class="d-block text-secondary font-size-1" href="javascript:;">
+                    <span class="far fa-heart mr-1"></span>
+                    <span>Mis favoritos</span>
+                  </a>
+                </div>
+
+                <div class="col-6 col-md-2 text-md-right">
+                  <span class="font-weight-medium">$29.99</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Product Content -->
+
+            <!-- Product Content -->
+            <div class="row mb-10">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="media">
+                  <div class="max-width-15 w-100 mr-3">
+                    <img class="img-fluid" src="./images/imgSm.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <h2 class="h6">Vans large image t-shirt</h2>
+                    <div class="text-secondary font-size-1 mb-1">
+                      <span>Genero:</span>
+                      <span>Women</span>
+                    </div>
+                    <div class="text-secondary font-size-1 mb-1">
+                      <span>Color:</span>
+                      <span>Core Black / Carbon</span>
+                    </div>
+                    <div class="text-secondary font-size-1 mb-1">
+                      <span>Tamaño:</span>
+                      <span>SM</span>
+                      <a class="link-muted ml-2" href="javascript:;">Edit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5 col-md-3 offset-md-1">
+                <select class="custom-select custom-select-sm w-auto mb-3">
+                  <option value="quantity1">1</option>
+                  <option value="quantity2">2</option>
+                  <option value="quantity3">3</option>
+                  <option value="quantity4">4</option>
+                  <option value="quantity5">5</option>
+                  <option value="quantity6">6</option>
+                  <option value="quantity7">7</option>
+                  <option value="quantity8">8</option>
+                  <option value="quantity9">9</option>
+                  <option value="quantity10">10</option>
+                </select>
+
+                <a class="d-block text-secondary font-size-1 mb-1" href="javascript:;">
+                  <span class="far fa-trash-alt mr-1"></span>
+                  <span>Remover</span>
+                </a>
+
+                <a class="d-block text-secondary font-size-1" href="javascript:;">
+                  <span class="far fa-heart mr-1"></span>
+                  <span>Mis favoritos</span>
+                </a>
+              </div>
+
+              <div class="col-6 col-md-2 text-md-right">
+                <span class="font-weight-medium">$43.99</span>
+              </div>
+            </div>
+            <!-- End Product Content -->
+
+            <div class="d-flex justify-content-end">
+              <a href="classic.html">
+                <small class="fas fa-arrow-left mr-1"></small>
+                Continuar comprando
+              </a>
+            </div>
+          </form>
         </div>
-        <i id="out-book" class="material-icons">
-          menu_book
-        </i>
-      </div>
-      <div id="label-PNF">
-        <h1>Oopps!</h1>
-        <h3>Lo sentimos el producto no ha sido encontrado!</h3>
       </div>
     </div>
-
-  </div>
+    <!-- End Cart Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- FOOTER -->
   <footer>
@@ -450,21 +556,92 @@
     <br />
   </footer>
 
-  <!-- Libreria para sliders -->
+
   <!-- JS Global Compulsory -->
+  <script src="../Site/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../Site/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../Site/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../Site/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="./assets/js/hs.core.js"></script>
-  <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="./assets/js/components/hs.slick-carousel.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="../Site/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../Site/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../Site/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../Site/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../Site/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../Site/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
-  <script src="./assets/js/components/hs.focus-state.js"></script>
-  <script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="./js/scripts.js"></script>
+  <!-- JS Front -->
+  <script src="../Site/assets/js/hs.core.js"></script>
+  <script src="../Site/assets/js/components/hs.header.js"></script>
+  <script src="../Site/assets/js/components/hs.unfold.js"></script>
+  <script src="../Site/assets/js/components/hs.focus-state.js"></script>
+  <script src="../Site/assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../Site/assets/js/components/hs.validation.js"></script>
+  <script src="../Site/assets/js/components/hs.show-animation.js"></script>
+  <script src="../Site/assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../Site/assets/js/components/hs.quantity-counter.js"></script>
+  <script src="../Site/assets/js/components/hs.selectpicker.js"></script>
+  <script src="../Site/assets/js/components/hs.svg-injector.js"></script>
+  <script src="../Site/assets/js/components/hs.go-to.js"></script>
 
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.hs-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
 
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of quantity counter
+      $.HSCore.components.HSQantityCounter.init('.js-quantity');
+
+      // initialization of select picker
+      $.HSCore.components.HSSelectPicker.init('.js-select');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
 </body>
 
 </html>

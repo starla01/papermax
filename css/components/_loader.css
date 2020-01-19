@@ -13,8 +13,11 @@
 #loading-img i {
   -webkit-animation: ldsHourglass 1.2s infinite;
   animation: ldsHourglass 1.2s infinite;
-  font-size: 100px;
-  color: #377dff;
+  font-size: 50px;
+  color: white;
+  background: #377dff;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 @keyframes ldsHourglass {

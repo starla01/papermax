@@ -943,3 +943,7 @@ footer .lineaFooter {
 .btn.btn-primary.full {
   width: 100%;
 }
+
+.pointers {
+  cursor: pointer;
+}
