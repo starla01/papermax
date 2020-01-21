@@ -102,6 +102,8 @@
   margin: 0;
   line-height: 18px;
   font-size: 14px;
+  height: 38px;
+  overflow: hidden;
 }
 
 .product .item .info .brand {
