@@ -16,3 +16,14 @@
   margin: 0 20px;
   font-size: 12px;
 }
+
+#iconSupport,
+#iconPhone {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.topHeaderTexts {
+  display: flex;
+  align-items: center;
+}
