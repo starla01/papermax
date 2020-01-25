@@ -278,7 +278,7 @@
   position: relative;
   top: 0;
   box-sizing: border-box;
-  height: calc(100% - 170px);
+  height: calc(100% - 40%);
   overflow-y: scroll;
 }
 
@@ -345,13 +345,19 @@
 }
 
 #list_cart #totalCart {
-  position: absolute;
+  position: relative;
   bottom: 0;
   border-top: 1px dotted #888888;
   width: 100%;
   padding: 10px 6px 10px 6px;
   box-sizing: border-box;
   background-color: white;
+  height: 170px;
+}
+
+#totalCart .button.close {
+  position: relative;
+  margin-top: 20px;
 }
 
 #list_cart #totalCart #subTotal {
@@ -495,6 +501,19 @@
   cursor: pointer;
 }
 
+.button.close {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  color: white;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 770px) {
   #closeIconSearch {
     display: none;
@@ -502,6 +521,9 @@
 }
 
 @media screen and (max-width: 770px) {
+  .button.close {
+    display: block;
+  }
   #nameAccount {
     display: none;
   }
@@ -559,7 +581,7 @@
   #menuContainer {
     position: fixed;
     left: 0;
-    top: 60px;
+    top: 0;
     width: 150px;
     height: 100%;
     border-radius: 0;
