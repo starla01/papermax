@@ -591,6 +591,9 @@
 }
 
 @media screen and (max-width: 770px) {
+  #searchInput {
+    border-radius: 30px;
+  }
   #menuContainer {
     display: block;
   }
@@ -643,7 +646,7 @@
   }
 
   .containerNav.active #triggerSearch {
-    width: 95% !important;
+    width: 98% !important;
     position: absolute;
     z-index: 1;
     height: 40px;
