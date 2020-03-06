@@ -550,6 +550,10 @@
   display: none;
 }
 
+#popContainerCart .titleContainerMenu {
+  display: block;
+}
+
 #contact-info {
   position: fixed;
   left: 0;

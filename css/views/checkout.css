@@ -126,7 +126,6 @@
 }
 
 #contentCheckout {
-  border: 1px solid red;
   border-radius: 4px;
   border: 1px solid #e7eaf3;
   box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
@@ -137,4 +136,25 @@
 #navigationButtons {
   display: flex;
   justify-content: flex-end;
+}
+.optionPayment i {
+  font-size: 36px;
+  position: relative;
+  line-height: 40px;
+  top: 10px;
+}
+.optionPayment {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.optionPayment.active {
+  background-color: #76d3ff;
+}
+
+.optionPayment:hover {
+  background: rgb(232, 232, 232);
 }
