@@ -1,0 +1,106 @@
+#contentWrapper {
+  width: 100%;
+}
+
+#content {
+  background-image: url(../../images/back_aboutus.jpg);
+  width: 100%;
+  background-size: 100%;
+  height: 950px;
+}
+
+#boxMessage {
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 45%;
+  height: 100%;
+}
+
+#boxMessage > h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#boxMessage > div {
+  font-size: 22px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#subtitleContent {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+#bannerMessage {
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 45%;
+  height: 100%;
+}
+
+#bannerMessage {
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+}
+
+#bannerMessageTerminos {
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+}
+
+#contentTerminos {
+  width: 100%;
+  background-size: 100%;
+  height: 300px;
+  padding-top: 90px;
+  background: rgb(217, 217, 217);
+  background: linear-gradient(
+    4deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(255, 255, 255, 1) 73%
+  );
+}
+
+#contentPrivacity {
+  background-image: url(../../images/banner_baco.jpg);
+  width: 100%;
+  background-size: 100%;
+  height: 300px;
+}
+
+#textLegacy {
+  width: 100%;
+  padding: 40px 400px;
+}
+
+.center {
+  text-align: center;
+  font-size: 22px;
+}
+
+.center h2 {
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+}
+
+#paymentMethods {
+  max-width: 1200px;
+}
