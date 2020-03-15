@@ -463,6 +463,11 @@ html {
     margin: 1.5rem 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-form.contain .main-form__row .main-form__separador {
+    display: none;
+  }
+}
 .main-form.contain .main-form__row .main-form__form {
   margin: 1.5rem 0;
 }
